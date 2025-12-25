@@ -1,0 +1,11 @@
+{
+  "id": "life-tag-aggregator",
+  "name": "Life Tag Aggregator",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "Automatically generates tag-based aggregate files from a single Life.md source file, preserving date context.",
+  "author": "Your Name",
+  "authorUrl": "",
+  "isDesktopOnly": false
+}
+

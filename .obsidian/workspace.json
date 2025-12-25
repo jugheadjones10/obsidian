@@ -1,0 +1,328 @@
+{
+  "main": {
+    "id": "06d7e659efeff4cb",
+    "type": "split",
+    "children": [
+      {
+        "id": "b8c7aa7048181cb3",
+        "type": "tabs",
+        "dimension": 65.60913705583756,
+        "children": [
+          {
+            "id": "56df314d823e0973",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Life.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Life"
+            }
+          },
+          {
+            "id": "2eeef9bfc2d9ed4f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Chapter 2 - Linear Algebra.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Chapter 2 - Linear Algebra"
+            }
+          },
+          {
+            "id": "792ed07b6839e75d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Prioritized Level Replay.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Prioritized Level Replay"
+            }
+          },
+          {
+            "id": "63d6c38b4a73409d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Assessing Adaptive World Models in Machineswith Novel Games.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Assessing Adaptive World Models in Machineswith Novel Games"
+            }
+          },
+          {
+            "id": "4a634118710106e2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Jax.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Jax"
+            }
+          },
+          {
+            "id": "6b2b1121401fd50c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Python.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Python"
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "ff00ddaccc93be7f",
+        "type": "tabs",
+        "dimension": 34.390862944162436,
+        "children": [
+          {
+            "id": "74e9827263b35d00",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Weekly Life.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Weekly Life"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "360db6f120c95556",
+    "type": "split",
+    "children": [
+      {
+        "id": "3321aec2325782f3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "faecc367cf5d8ce8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "a91937d543c1f416",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#flashcards",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "4b1cc54414f14491",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 299.5
+  },
+  "right": {
+    "id": "78449b937934cf5e",
+    "type": "split",
+    "children": [
+      {
+        "id": "b3fa1a492b2a52b2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bd66b01a6df2c3e5",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Untitled.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Untitled"
+            }
+          },
+          {
+            "id": "72b71ebdc4a79018",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Untitled.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Untitled"
+            }
+          },
+          {
+            "id": "c4a796e297fe1450",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "f76510cb820d35a2",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "ec268de7890a2939",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Prioritized Level Replay.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Prioritized Level Replay"
+            }
+          },
+          {
+            "id": "91ab5197972cab32",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "SpacedRepIcon",
+              "title": "Notes Review Queue"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 234.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian-spaced-repetition:Review flashcards": false
+    }
+  },
+  "active": "2eeef9bfc2d9ed4f",
+  "lastOpenFiles": [
+    "Aggregates/Pushworld-Engineering.md",
+    "Life.md",
+    "Aggregates/Pushworld-Ideas.md",
+    "Aggregates/Pushworld-Odeas.md",
+    "Aggregates/Pushworld.md",
+    "Aggregates/Pushworld-Engeinee.md",
+    "Assessing Adaptive World Models in Machineswith Novel Games.md",
+    "Prioritized Level Replay.md",
+    "Weekly Life.md",
+    "Chapter 2 - Linear Algebra.md",
+    "Jax.md",
+    "Neumann Syllabus.md",
+    "images/SCR-20251223-nozr.png",
+    "Assessing Adaptive World Models in Machines with Novel Games.md",
+    "images",
+    "SCR-20251223-noqu.png",
+    "Pasted image 20251223144533.png",
+    "Pasted image 20251221212242.png",
+    "Pasted image 20251221202951.png",
+    "Python.md",
+    "Aggregates/Project-Neumann.md",
+    "Aggregates/Money.md",
+    "Aggregates/Ideas.md",
+    "Mathematics for ML.md",
+    "Aggregates/Women.md",
+    "Aggregates/Men.md",
+    "Aggregates/Places.md",
+    "Aggregates/Research.md",
+    "Aggregates/Journal.md",
+    "Life.md.md",
+    "PushWorld papers.md",
+    "Aggregates",
+    "Welcome.md",
+    "Untitled.canvas"
+  ]
+}

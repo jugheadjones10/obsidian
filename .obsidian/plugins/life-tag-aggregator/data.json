@@ -1,0 +1,9 @@
+{
+  "sourceFile": "Life.md",
+  "outputFolder": "Aggregates",
+  "dateHeadingRegex": "^#\\s+(\\d{4}-\\d{2}-\\d{2})\\s*$",
+  "tagHeadingLevel": 2,
+  "groupByDate": true,
+  "includeBacklinks": true,
+  "debounceMs": 500
+}
