@@ -60,7 +60,7 @@ What are free variables?::They are the variables corresponding to the non-pivot 
 <!--SR:!2026-01-04,16,300-->
 
 Why does a matrix being in row-echelon form make it easy to find a particular solution?::Row-echelon form makes it easy to find a particular solution because once we set all free (non-pivot) variables to $0$, only the pivot variables remain. Then the echelon structure lets us solve by back-substitution: the bottom pivot equation has only one unknown so we solve it first, and each pivot equation above reduces to one unknown after substituting previously found values. Repeating upward determines all pivot variables, giving a particular solution.
-<!--SR:!2025-12-25,2,276-->
+<!--SR:!2025-12-31,6,276-->
 
 What are the three criteria for a matrix to be in a reduced row-echelon form?
 ?
@@ -73,7 +73,7 @@ What does Gaussian elimination do?::It is an algorithm that performs elementary 
 <!--SR:!2026-01-10,17,305-->
 
 Why does a matrix being in reduced row-echelon form make it easy to find the general solutions of a system of linear equations?::If a matrix $A$ is in reduced row-echelon form, it is easy to find the solutions to $Ax=0$ and therefore the general solutions of the system of linear equations. Starting from the leftmost column and moving right, for each non-pivot column we encounter, there will be enough pivot columns to its left for the non-pivot column to be expressed as their sums and multiples. Then we can obtain a solution by assigning the basic variables to the left of our non-pivot column the same values that are in the non-pivot column. We assign -1 to the free variable corresponding to our non-pivot column, and 0 to all other remaining variables, in this way obtaining a solution to $Ax=0$.
-<!--SR:!2025-12-25,2,265-->
+<!--SR:!2025-12-30,5,265-->
 
 What two properties of matrices in reduced row-echelon form make it trivial to express a non-pivot column as a linear combination of the pivot columns to its left?::For each non-zero number in a non-pivot column, there exists a pivot column to its left where the 1 is on the same row as the non-zero number. This is guaranteed because for each row of a matrix in reduced row-echelon form (that is not a 0-row), the pivot, which is the leftmost non-zero number, is 1. Secondly, it is also trivial because in all the pivot columns, the pivot is the only nonzero element in its column; therefore, when expressing a non-pivot column j as a linear combination of pivot columns, we can simply take as coefficients the entries of column j in the pivot rows.
 <!--SR:!2026-01-05,13,295-->
@@ -138,7 +138,7 @@ What is the commutativity property of Abelian groups?::$\forall x,y \in \mathcal
 <!--SR:!2026-01-11,18,318-->
 
 What is the general linear group?::The *general linear group* $GL(n,\mathbb{R})$, is the set of regular (invertible) matrices $A \in \mathbb{R}^{n \times n}$ that is a group with respect to matrix multiplication.
-<!--SR:!2025-12-26,2,278-->
+<!--SR:!2026-01-01,6,278-->
 
 What do you call the set of regular (invertible) matrices $A \in \mathbb{R}^{n \times n}$ that is a group with respect to matrix multiplication?::The *general linear group* $GL(n,\mathbb{R})$.
 <!--SR:!2026-01-06,13,298-->
@@ -160,13 +160,13 @@ $$
 \cdot : \mathbb{R} \times \mathcal{V} \to \mathcal{V}
 $$
 where the following are satisfied: $(\mathcal{V}, +)$ is an Abelian group, Distributivity, Associativity with respect to the outer operation, and Neutral element with respect to the outer operation.
-<!--SR:!2025-12-26,2,278-->
+<!--SR:!2025-12-27,1,258-->
 
 What exactly is the "Distributivity" property satisfied by a real-valued *vector space* $\mathcal{V} = (\mathcal{V}, +, \cdot)$?
 ?
 1. $\forall \lambda \in \mathbb{R},\; x,y \in \mathcal{V} : \lambda \cdot (x + y) = \lambda \cdot x + \lambda \cdot y$
 2. $\forall \lambda,\psi \in \mathbb{R},\; x \in \mathcal{V} : (\lambda + \psi) \cdot x = \lambda \cdot x + \psi \cdot x$
-<!--SR:!2025-12-26,3,288-->
+<!--SR:!2026-01-05,10,288-->
 
 What exactly is the "Associativity" property (with respect to the outer operation) satisfied by a real-valued *vector space* $\mathcal{V} = (\mathcal{V}, +, \cdot)$?::$\forall \lambda,\psi \in \mathbb{R},\; x \in \mathcal{V} : \lambda \cdot (\psi \cdot x) = (\lambda\psi) \cdot x$
 <!--SR:!2026-01-10,17,318-->
@@ -228,7 +228,7 @@ $$
 0 \notin T.
 $$
 It also fails the requirement that it be closed with respect to the inner operation as well as the outer operation.
-<!--SR:!2025-12-26,3,288-->
+<!--SR:!2026-01-07,12,308-->
 
 >Feel like with a really deep understanding of linear algebra I will be able to answer this: ![[Pasted image 20251221212242.png]]
 
@@ -283,18 +283,22 @@ Say we have a matrix in row echelon form. Just by looking at its pivot columns, 
 >Skipped a final remark for now, come back to it.
 
 # 2.6 Basis and Rank
-2 days (24th Dec - 25th Dec)
 
 ## 2.6.1 Generating Set and Basis
 Consider a vector space $V=(\mathcal{V},+,\cdot)$. What is a *generating set* of $V$?::A set of vectors $\mathcal{A}=\{x_1,\ldots,x_k\}\subseteq \mathcal{V}$ is a *generating set* of $V$ if every vector $v\in\mathcal{V}$ can be expressed as a linear combination of $x_1,\ldots,x_k$.
+<!--SR:!2025-12-28,3,299-->
 
 Consider a vector space $V=(\mathcal{V},+,\cdot)$ and a set of vectors $\mathcal{A}=\{x_1,\ldots,x_k\}\subseteq \mathcal{V}$. If $\mathcal{A}$ is a generating set of $\mathcal{V}$, what is the set of all linear combinations of vectors in $\mathcal{A}$ called?::It is called the *span* of $\mathcal{A}$. If $\mathcal{A}$ spans the vector space $\mathcal{V}$, we write $\mathcal{V} = \operatorname{span}[\mathcal{A}]$ or $\mathcal{V} = \operatorname{span}[x_1,\ldots,x_k].$
+<!--SR:!2025-12-29,4,319-->
 
 Consider a vector space $V=(\mathcal{V},+,\cdot)$ and $\mathcal{A}\subseteq\mathcal{V}$. There exists no smaller set $\tilde{\mathcal{A}}\subsetneq \mathcal{A}\subseteq \mathcal{V}$ that spans $\mathcal{V}$. What is this property of $\mathcal{A}$ called?::It is *minimal*.
+<!--SR:!2025-12-30,4,299-->
 
 Let $V = (\mathcal{V}, +, \cdot)$ be a vector space and $\mathcal{B} \subseteq \mathcal{V}$, $\mathcal{B} \neq \varnothing$. If $\mathcal{B}$ is a basis of $V$, in what sense is $\mathcal{B}$ *minimal*?::$\mathcal{B}$ is the minimal generating set.
+<!--SR:!2025-12-30,4,299-->
 
 Let $V = (\mathcal{V}, +, \cdot)$ be a vector space and $\mathcal{B} \subseteq \mathcal{V}$, $\mathcal{B} \neq \varnothing$. If $\mathcal{B}$ is a basis of $V$, in what sense is $\mathcal{B}$ *maximal*?::$\mathcal{B}$ is a maximal linearly independent set of vectors in $V$, i.e., adding any other vector to this set will make it linearly dependent.
+<!--SR:!2025-12-29,4,319-->
 
 Let $V = (\mathcal{V}, +, \cdot)$ be a vector space and $\mathcal{B} \subseteq \mathcal{V}$, $\mathcal{B} \neq \varnothing$. If $\mathcal{B}$ is a basis of $V$, we know that every vector $x \in \mathcal{V}$ is a linear combination of vectors from $\mathcal{B}$. Is every such linear combination unique?
 ?
@@ -303,50 +307,131 @@ $$
 x = \sum_{i=1}^k \lambda_i b_i \;=\; \sum_{i=1}^k \psi_i b_i
 $$
 and $\lambda_i, \psi_i \in \mathbb{R}$, $b_i \in \mathcal{B}$, it follows that $\lambda_i = \psi_i$, $i = 1, \ldots, k$.
+<!--SR:!2025-12-29,4,319-->
 
 Consider a vector space $V$. What does the *dimension* of $V$ mean?::It is the number of basis vectors of $V$, and is represented by $\dim(V)$.
+<!--SR:!2025-12-29,4,319-->
 
 Consider a vector space $V$. If $U \subseteq V$ is a subspace of $V$, what is the relationship between their dimensions?::$\dim(U) \le \dim(V)$. Also, $\dim(U) = \dim(V)$ if and only if $U = V$.
+<!--SR:!2025-12-29,4,319-->
 
 Is the dimension of a vector space always equal to the number of elements in a vector? Why or why not?::No. Intuitively, it seems like if a vector has, for example, 2 elements, then its "dimension" is 2, with a potential pair of basis vectors being $\begin{bmatrix} 0\\ 1 \end{bmatrix}$ and $\begin{bmatrix} 1\\ 0 \end{bmatrix}$. However, consider the vector space $V = \operatorname{span}\! \begin{bmatrix} 0\\ 1 \end{bmatrix}$. It is one-dimensional, although the basis vector possesses two elements.
+<!--SR:!2025-12-29,4,319-->
 
 How can we find a basis of a subspace $U = \operatorname{span}[x_1,\ldots,x_m] \subseteq \mathbb{R}^n$?
 ?
 1. Write the spanning vectors as columns of a matrix $A$.
 2. Determine the row-echelon form of $A$.
 3. The spanning vectors associated with the pivot columns are a basis of $U$.
+<!--SR:!2025-12-29,4,319-->
 
 ## 2.6.2 Rank
 What is the number of linearly independent columns of a matrix $A \in \mathbb{R}^{m\times n}$ called?::It is the *rank* of $A$ and is denoted by $\mathrm{rk}(A)$.
+<!--SR:!2025-12-29,4,319-->
 
-What is the number of linearly independent rows of a matrix $A \in \mathbb{R}^{m\times n}$ called?::Is is the *rank* of $A$ and is denoted by $\mathrm{rk}(A)$.
+What is the number of linearly independent rows of a matrix $A \in \mathbb{R}^{m\times n}$ called?::It is the *rank* of $A$ and is denoted by $\mathrm{rk}(A)$.
+<!--SR:!2025-12-29,4,319-->
 
 Is the column rank equal to the row rank?::Yes.
+<!--SR:!2025-12-28,3,299-->
 
 What is the dimension of the subspace $U \subseteq \mathbb{R}^m$ spanned by the columns of $A \in \mathbb{R}^{m\times n}$? And what is it called?::$\dim(U)=\mathrm{rk}(A)$, and this subspace is called the *image* or *range*.
+<!--SR:!2025-12-30,4,299-->
 
 How do you find the basis of the subspace $U \subseteq \mathbb{R}^m$ spanned by the columns of $A \in \mathbb{R}^{m\times n}$?::Perform Gaussian elimination on $A$ to find the pivot columns, which will then be the basis vectors of the subspace $U$.
+<!--SR:!2025-12-29,4,319-->
 
-What is the dimension of the subspace $W \subseteq \mathbb{R}^n$ spanned by the rows of $A \in \mathbb{R}^{m\times n}$?::$\dim(W)=\mathrm{rk}(A)$, and this subspace is called the *image* or *range*.
+What is the dimension of the subspace $W \subseteq \mathbb{R}^n$ spanned by the rows of $A \in \mathbb{R}^{m\times n}$?::$\dim(W)=\mathrm{rk}(A)$.
+<!--SR:!2025-12-29,4,324-->
 
 How do you find the basis of the subspace $W \subseteq \mathbb{R}^n$ spanned by the rows of $A \in \mathbb{R}^{m\times n}$?::Perform Gaussian elimination on $A^\top$ to find the pivot columns, which will then be the basis vectors of the subspace $W$.
+<!--SR:!2025-12-29,4,319-->
 
 For all $A \in \mathbb{R}^{n\times n}$, how do we tell if it is regular (invertible) using rank?::$A$ is regular (invertible) if and only if $\mathrm{rk}(A)=n$.
+<!--SR:!2025-12-28,3,299-->
 
 For all $A \in \mathbb{R}^{m\times n}$ and all $b \in \mathbb{R}^m$ it holds that the linear equation system $Ax=b$ can be solved if and only if...(answer in terms of rank):: $\mathrm{rk}(A)=\mathrm{rk}(A \mid b),$ where $A \mid b$ denotes the augmented system.
+<!--SR:!2025-12-29,4,319-->
 
 What dimension does the subspace of solutions for $Ax=0$ possess, where $A \in \mathbb{R}^{m\times n}$?::It possesses dimension $n-\mathrm{rk}(A)$.
+<!--SR:!2025-12-29,4,319-->
 
 What is the subspace of solutions for $Ax=0$ called?::The *kernel* or the *null space*.
+<!--SR:!2025-12-28,3,299-->
 
-When does a matrix $A \in \mathbb{R}^{m\times n}$ have *full rank*?::If its rank equals the largest possible rank for a matrix of the same dimensions. In other word, the matrix has full rank if $\mathrm{rk}(A)=\min(m,n)$.
+When does a matrix $A \in \mathbb{R}^{m\times n}$ have *full rank*?::If its rank equals the largest possible rank for a matrix of the same dimensions. In other words, the matrix has full rank if $\mathrm{rk}(A)=\min(m,n)$.
+<!--SR:!2025-12-29,4,319-->
 
 When is a matrix to be *rank deficient*?::If it does not have full rank.
+<!--SR:!2025-12-29,4,319-->
 
-
+>Figure out the *whys* behind all the above statements later on.
 
 # 2.7 Linear Mappings
 26th Dec - 30th Dec
+
+Suppose we have a mapping on a vector space. What needs to be satisfied to ensure that we "preserve the structure of the vector space" over the mapping?
+?
+We know that a vector space is closed over the inner operation and the outer operation. A mapping $\Phi : V \to W$ preserves this structure of the vector space if
+$$
+\Phi(x+y) = \Phi(x) + \Phi(y)
+$$
+$$
+\Phi(\lambda x) = \lambda \Phi(x)
+$$
+for all $x, y \in V$ and $\lambda \in \mathbb{R}$.
+<!--SR:!2025-12-28,3,299-->
+
+For vector spaces $V, W$, what is required for a mapping $\Phi : V \to W$ to be a *linear mapping* (or *vector space homomorphism* / *linear transformation*)?:: $\forall x,y \in V \ \forall \lambda,\psi \in \mathbb{R}:\quad \Phi(\lambda x + \psi y) = \lambda \Phi(x) + \psi \Phi(y)$.
+<!--SR:!2025-12-29,4,324-->
+
+What are two interpretations we can have about the meaning of matrices?::Matrices can represent a collection of vectors, or a linear mapping.
+<!--SR:!2025-12-29,4,319-->
+
+Consider a mapping $\Phi : \mathcal{V} \to \mathcal{W}$, where $\mathcal{V}, \mathcal{W}$ can be arbitrary sets. What does it mean for $\Phi$ to be *injective*?::$\forall x,y \in \mathcal{V}:\ \Phi(x)=\Phi(y) \Rightarrow x=y$. It means there cannot be many-to-one relationships. However, an injection might not necessarily cover every element in $\mathcal{W}$.
+
+Consider a mapping $\Phi : \mathcal{V} \to \mathcal{W}$, where $\mathcal{V}, \mathcal{W}$ can be arbitrary sets. What does it mean for $\Phi$ to be *surjective*?::$\Phi(\mathcal{V})=\mathcal{W}$. It means that every element in $\mathcal{W}$ can be "reached" from $\mathcal{V}$ using $\Phi$.
+
+Consider a mapping $\Phi : \mathcal{V} \to \mathcal{W}$, where $\mathcal{V}, \mathcal{W}$ can be arbitrary sets. What does it mean for $\Phi$ to be *bijective*?::It is both injective and surjective. A bijective $\Phi$ can be “undone”, i.e., there exists a mapping $\Psi : W \to V$ so that $\Psi \circ \Phi(x) = x$.
+
+Consider vector spaces $V,W$. What is an _isomorphism_ between $V$ and $W$?::An isomorphism is a linear map $\Phi:V\to W$ that is bijective.
+
+Consider a vector space $V$. What is an _endomorphism_ of $V$?::An endomorphism is a linear map $\Phi:V\to V$.
+
+Consider a vector space $V$. What is an _automorphism_ of $V$?::An automorphism is a linear map $\Phi:V\to V$ that is bijective.
+
+Consider a vector space $V$. What is the _identity mapping_ on $V$?::It is $\mathrm{id}_V:V\to V$ defined by $\mathrm{id}_V(x)=x$ for all $x\in V$.
+
+If we have finite-dimensional vector spaces $V$ and $W$ and they are isomorphic, what can we say about the relationship between their dimensions?::$\dim(V) = \dim(W)$.
+
+If we have finite-dimensional vector spaces $V$ and $W$ and $\dim(V) = \dim(W)$, what can we say about the type of linear mapping between them?::They are isomorphic.
+
+>Not sure if I want to Ankify these, don't see the conceptual importance:
+• For linear mappings $\Phi : V \to W$ and $\Psi : W \to X$, the mapping $\Psi \circ \Phi : V \to X$ is also linear.
+• If $\Phi : V \to W$ is an isomorphism, then $\Phi^{-1} : W \to V$ is an isomorphism, too.
+• If $\Phi : V \to W$, $\Psi : V \to W$ are linear, then $\Phi + \Psi$ and $\lambda \Phi$, $\lambda \in \mathbb{R}$, are linear, too.
+
+## 2.7.1 Matrix Representation of Linear Mappings
+Consider a vector space $V$ and an ordered basis $B = (b_1,\ldots,b_n)$ of $V$. For any $x \in V$, what is the coordinate vector / coordinate representation of $x$ with respect to the ordered basis $B$?
+?
+For any $x \in V$ we obtain a unique representation (linear combination)
+$$
+x = \alpha_1 b_1 + \cdots + \alpha_n b_n
+$$
+of $x$ with respect to $B$. Then $\alpha_1,\ldots,\alpha_n$ are the coordinates of $x$ with respect to $B$, and the vector
+$$
+\alpha =
+\begin{bmatrix}
+\alpha_1\\
+\vdots\\
+\alpha_n
+\end{bmatrix}
+\in \mathbb{R}^n
+$$
+is the coordinate vector/coordinate representation of $x$ with respect to the ordered basis $B$.
+
+>Skipped this too:
+>Remark. For an $n$-dimensional vector space $V$ and an ordered basis $B$ of $V$, the mapping $\Phi : \mathbb{R}^n \to V$, $\Phi(e_i)=b_i$, $i=1,\ldots,n$, is linear (and because of Theorem 2.17 an isomorphism), where $(e_1,\ldots,e_n)$ is the standard basis of $\mathbb{R}^n$.
 
 
 

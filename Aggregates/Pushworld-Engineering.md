@@ -7,6 +7,19 @@ do-not-edit: true
 
 # Pushworld Engineering
 
+## 2025-12-26 [[Life#2025-12-26#Pushworld Engineering|↩]]
+
+- I'm at a crossroad right now. I have my existing `train_single_task_pushworld_all.py` implementation that I modified from the implementation in `xland-minigrid` to fit PushWorld's case. I have also just finished studying the plr/accel implementation in `jaxued`. Originally I thought I could just copy over some of the stuff in `jaxued` to my original code, but the structure of the code in `jaxued` is different enough that I'm wondering if it's worth it to painstaking update my original implementation. The `jaxued` version has support for a lot more things, like real-time logging and video output, ability to configure evaluation to be done every x updates, etc. It also already has support for accel, meaning if we modify the `jaxued` for the PushWorld case we get to run accel experiments for "free". Should I just use this opportunity to start a whole new PushWorld repository? And move away from `xland-minigrid`?
+- What if I try passing a whole repo to an LLM and ask it to generate atomic Jax puzzles that will help me master all the small Jax concepts used? And then paste it into my Obsidian spaced repetition system.
+
+# money
+Tweets and ideas for earning money:
+
+- [ ] Migrate writings from old Obsidian vault and maybe expand on them, especially the intelligence writings.
+- [ ] Start "RL for dummies"
+- [ ] Start "RL perf for dummies"
+- [ ] Start "The Intelligence Manifesto"
+
 ## 2025-12-24 [[Life#2025-12-24#Pushworld Engineering|↩]]
 
 I was trying to understand a particularly gnarly network in JaxUED. I was confused about the shapes, I didn't know what the intermediate values looked like, etc. I asked Claude in Cursor to "create a notebook that initialises some fake values that are in the same shape as what the network will receive as actual input during real execution, and then walk me through the network line by line, allowing me to execute each important part one at a time so that i can look at the outputs and inspect the shapes, etc.?"

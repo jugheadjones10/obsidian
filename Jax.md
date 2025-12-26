@@ -17,10 +17,13 @@ Returns an array with values drawn from `x` where condition is True, and from `y
 # jax.random
 ## jax.random.choice
 What are the commonly used positional arguments of `jax.random.choice`, and in what order?::The usual signature is `jax.random.choice(key, a, shape=(), replace=True, p=None, ...)`.
+<!--SR:!2025-12-28,3,276-->
 
 In  `jax.random.choice(key, a, shape=(), replace=True, p=None, ...)`, what is `shape`?:: An optional tuple of ints, which determines the output shape of the returned samples. If the given shape is, e.g., `(m, n)`, then `m * n` samples are drawn. Default is (), in which case a single value is returned.
+<!--SR:!2025-12-29,4,296-->
 
-You need to randomly sample one or more items from a set of candidates (optionally with a probability distribution, and optionally with the results in some arbitrary shape). What JAX function do you use?::`jax.random.choice(key, a, shape=() replace=True, p=None, ...)`.
+You need to randomly sample one or more items from a set of candidates (optionally with a probability distribution, and optionally with the results in some arbitrary shape). What JAX function do you use and in what order are the arguments?::`jax.random.choice(key, a, shape=() replace=True, p=None, ...)`.
+<!--SR:!2025-12-30,4,276-->
 
 # jax.lax
 ## jax.lax.scan

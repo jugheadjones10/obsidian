@@ -50,8 +50,8 @@ Add the diagram thing!
 What is the formula for the TD-error at timestep $t$, $\delta_t$?::$\delta_t = r_t + \gamma V(s_{t+1}) - V(s_t)$.
 <!--SR:!2026-01-02,14,290-->
 
-Why is $\delta_t$ a useful measure of the learning potential of a particular state transition?::Because a larger $\delta_t$ indicates a greater mismatch between $V(s_t)$ and the one-step TD target $r_t + \gamma V(s_{t+1})$, signaling higher learning potential.
-<!--SR:!2025-12-26,8,256-->
+Why is $\delta_t$ a useful measure of the learning potential of a particular state transition?::Because $\delta_t$ indicates a mismatch between $V(s_t)$ and the one-step TD target $r_t + \gamma V(s_{t+1})$, signaling a high learning potential.
+<!--SR:!2026-01-15,20,256-->
 
 How do we use $\delta_t$, which is for single state transitions, to calculate a proxy for the learning potential of a whole episode trajectory?::We calculate the average magnitude of the GAE over each of the T time steps in the latest episode trajectory $\tau$ from that level: $\frac{1}{T}\sum_{t=0}^{T}\left|\sum_{k=t}^{T}(\gamma\lambda)^{k-t}\,\delta_k\right|$.
 <!--SR:!2025-12-31,7,250-->

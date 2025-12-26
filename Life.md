@@ -37,8 +37,6 @@
 
 - [x] Obsidian review
 
-- [ ] Trex test answer key cropping using Gemini 3 Flash
-
 
 # 2025-12-21
 - [ ] "Beasts of a Little Land" reading
@@ -47,7 +45,6 @@
 - [x] Continue reading PLR code in JaxUED
 - [x] Exercise
 - [ ] Obsidian review
-- [ ] Trex test answer key cropping using Gemini 3 Flash
 
 # 2025-12-22
 - [x] "Beasts of a Little Land" reading
@@ -67,8 +64,6 @@
 - [x] "Beasts of a Little Land" reading
 - [x] Math for Machine Learning
 - [x] Obsidian review
-- [ ] Write about experience yesterday getting distracted while doing hard Jax stuff. The need to interleave fun stuff with not-so-fun stuff.
-- [ ] Expand on the idea on neuro-evolution and RL life simulator you had while waiting in line at OCBC.
 
 - [x] Continue implementing in-training video and perf logging like in Kinetix
 
@@ -87,12 +82,7 @@ What if I feed an LLM every single flashcard I made for a chapter and the origin
 - [ ] Exercise
 - [x] Obsidian review
 
-- [ ] Continue using the debugger to understand JaxUED
-
-- [ ] Move Notion todos to here
-- [ ] Message Titin about new arrangement
-- [ ] Write about experience yesterday getting distracted while doing hard Jax stuff. The need to interleave fun stuff with not-so-fun stuff.
-- [ ] Expand on the idea on neuro-evolution and RL life simulator you had while waiting in line at OCBC.
+- [x] Continue using the debugger to understand JaxUED
 
 ## PushWorld ideas
 - Thinking back to the "Interpreting Emergent Planning in Model-Free Reinforcement Learning" paper, can we say that emergent planning also implies that world models also emerged? Maybe the "General agents need world models" paper can help make the connection?
@@ -135,10 +125,34 @@ We can even use this approach to create "notes" for codebases that we read, such
 - https://github.com/adam-maj/tiny-gpu
 
 # 2025-12-25
-- [ ] Trex test answer key cropping using Gemini 3 Flash
+- [ ] "Beasts of a Little Land" reading
+- [x] Math for Machine Learning
+- [x] Exercise
+- [x] Obsidian review
+## project neumann
+- Maybe I need to memorise content pages as well? So that I can list out every topic and sub-topic learned from a textbook, and create a map of concepts in my mind that I can traverse at will.
+- I want to try experimenting how well different models are at converting content into flashcards. Not for math, but for the kind of content that involves more memory than conceptual understanding, like Linux commands, or Operating System facts.
 
 # 2025-12-26
+- [x] "Beasts of a Little Land" reading
+- [x] Math for Machine Learning
+- [ ] Exercise
+- [x] Obsidian review
 
+- [ ] Continue using the debugger to understand JaxUED
+- [ ] Continue reading and ankifying "Assessing Adaptive World Models in Machines with Novel Games"
+
+- [ ] Take care of Titin payment
+- [ ] Move Notion todos to here
+- [ ] Message Titin about new arrangement
+- [ ] Expand on the idea on neuro-evolution and RL life simulator you had while waiting in line at OCBC.
+
+- [ ] Take care of Dong Jin stuff
+- [ ] Trex test answer key cropping using Gemini 3 Flash
+
+## PushWorld engineering
+- I'm at a crossroad right now. I have my existing `train_single_task_pushworld_all.py` implementation that I modified from the implementation in `xland-minigrid` to fit PushWorld's case. I have also just finished studying the plr/accel implementation in `jaxued`. Originally I thought I could just copy over some of the stuff in `jaxued` to my original code, but the structure of the code in `jaxued` is different enough that I'm wondering if it's worth it to painstaking update my original implementation. The `jaxued` version has support for a lot more things, like real-time logging and video output, ability to configure evaluation to be done every x updates, etc. It also already has support for accel, meaning if we modify the `jaxued` for the PushWorld case we get to run accel experiments for "free". Should I just use this opportunity to start a whole new PushWorld repository? And move away from `xland-minigrid`?
+- What if I try passing a whole repo to an LLM and ask it to generate atomic Jax puzzles that will help me master all the small Jax concepts used? And then paste it into my Obsidian spaced repetition system.
 
 # money
 Tweets and ideas for earning money:

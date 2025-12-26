@@ -6,7 +6,7 @@
       {
         "id": "b8c7aa7048181cb3",
         "type": "tabs",
-        "dimension": 65.60913705583756,
+        "dimension": 63.51522842639594,
         "children": [
           {
             "id": "56df314d823e0973",
@@ -92,13 +92,12 @@
               "title": "Python"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "ff00ddaccc93be7f",
         "type": "tabs",
-        "dimension": 34.390862944162436,
+        "dimension": 36.484771573604064,
         "children": [
           {
             "id": "74e9827263b35d00",
@@ -285,22 +284,28 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
-      "obsidian-spaced-repetition:Review flashcards": false
+      "obsidian-spaced-repetition:Review flashcards": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2eeef9bfc2d9ed4f",
+  "active": "56df314d823e0973",
   "lastOpenFiles": [
-    "Aggregates/Pushworld-Engineering.md",
+    "Chapter 2 - Linear Algebra.md",
+    "Weekly Life.md",
     "Life.md",
+    "Aggregates/Project-Neumann.md",
+    "Aggregates/Project-Neuma.md",
+    "Aggregates/Project-Neuman.md",
+    "Aggregates/Project-Neumanㅣ.md",
+    "Prioritized Level Replay.md",
+    "Assessing Adaptive World Models in Machineswith Novel Games.md",
+    "Jax.md",
+    "Python.md",
+    "Aggregates/Pushworld-Engineering.md",
     "Aggregates/Pushworld-Ideas.md",
     "Aggregates/Pushworld-Odeas.md",
     "Aggregates/Pushworld.md",
     "Aggregates/Pushworld-Engeinee.md",
-    "Assessing Adaptive World Models in Machineswith Novel Games.md",
-    "Prioritized Level Replay.md",
-    "Weekly Life.md",
-    "Chapter 2 - Linear Algebra.md",
-    "Jax.md",
     "Neumann Syllabus.md",
     "images/SCR-20251223-nozr.png",
     "Assessing Adaptive World Models in Machines with Novel Games.md",
@@ -309,8 +314,6 @@
     "Pasted image 20251223144533.png",
     "Pasted image 20251221212242.png",
     "Pasted image 20251221202951.png",
-    "Python.md",
-    "Aggregates/Project-Neumann.md",
     "Aggregates/Money.md",
     "Aggregates/Ideas.md",
     "Mathematics for ML.md",
@@ -319,10 +322,7 @@
     "Aggregates/Places.md",
     "Aggregates/Research.md",
     "Aggregates/Journal.md",
-    "Life.md.md",
-    "PushWorld papers.md",
     "Aggregates",
-    "Welcome.md",
     "Untitled.canvas"
   ]
 }
