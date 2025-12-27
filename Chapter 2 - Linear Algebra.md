@@ -120,7 +120,7 @@ What is a *group*?::Consider a set $\mathcal{G}$ and an operation $\otimes : \ma
 <!--SR:!2026-01-10,17,326-->
 
 What does the property of groups “Closure of $G$ under $\otimes$” mean?::$\forall x,y \in \mathcal{G} : x \otimes y \in \mathcal{G}$.
-<!--SR:!2025-12-27,4,307-->
+<!--SR:!2026-01-14,18,327-->
 
 What does the property of groups "Associativity" mean?::$\forall x,y,z \in \mathcal{G} : (x \otimes y) \otimes z = x \otimes (y \otimes z)$.
 <!--SR:!2026-01-11,18,318-->
@@ -129,7 +129,7 @@ What does the property of groups "Neutral element" mean?::$\exists e \in \mathca
 <!--SR:!2026-01-10,17,318-->
 
 What does the property of groups "Inverse element" mean?::$\forall x \in \mathcal{G} \ \exists y \in \mathcal{G} : x \otimes y = e \ \text{and} \ y \otimes x = e$, where $e$ is the neutral element. We often write $x^{-1}$ to denote the inverse element of $x$.
-<!--SR:!2025-12-27,4,307-->
+<!--SR:!2026-01-13,17,327-->
 
 What is an Abelian Group?::It is a group that satisfies the additional property of commutativity.
 <!--SR:!2026-01-11,18,318-->
@@ -160,7 +160,7 @@ $$
 \cdot : \mathbb{R} \times \mathcal{V} \to \mathcal{V}
 $$
 where the following are satisfied: $(\mathcal{V}, +)$ is an Abelian group, Distributivity, Associativity with respect to the outer operation, and Neutral element with respect to the outer operation.
-<!--SR:!2025-12-27,1,258-->
+<!--SR:!2025-12-30,3,258-->
 
 What exactly is the "Distributivity" property satisfied by a real-valued *vector space* $\mathcal{V} = (\mathcal{V}, +, \cdot)$?
 ?
@@ -172,13 +172,13 @@ What exactly is the "Associativity" property (with respect to the outer operatio
 <!--SR:!2026-01-10,17,318-->
 
 What exactly is the "Neutral element" property (with respect to the outer operation) satisfied by a real-valued *vector space* $\mathcal{V} = (\mathcal{V}, +, \cdot)$?::$\forall x \in \mathcal{V} : 1 \cdot x = x$
-<!--SR:!2025-12-27,4,307-->
+<!--SR:!2026-01-09,13,307-->
 
 ## 2.4.3 Vector Subspaces
 What is the definition of a vector subspace?::Let $\mathcal{V} = (\mathcal{V}, +, \cdot)$ be a vector space and $\mathcal{U} \subseteq \mathcal{V}$, $\mathcal{U} \neq \emptyset$. Then $\mathcal{U} = (\mathcal{U}, +, \cdot)$ is called a *vector subspace* of $\mathcal{V}$ (or *linear subspace*) if $\mathcal{U}$ is a vector space with the vector space operations $+$ and $\cdot$ restricted to $\mathcal{U} \times \mathcal{U}$ and $\mathbb{R} \times \mathcal{U}$. We write $\mathcal{U} \subseteq \mathcal{V}$ to denote a subspace $\mathcal{U}$ of $\mathcal{V}$.
-<!--SR:!2025-12-27,3,267-->
+<!--SR:!2025-12-29,2,247-->
 
-Say that $\mathcal{U} \subseteq \mathcal{V}$ and $\mathcal{V}$ is a vector space. How do we determine if $(\mathcal{U}, +, \cdot)$ is a subspace of $\mathcal{V}$?
+Say that $\mathcal{U} \subseteq \mathcal{V}$ and $\mathcal{V}$ is a vector space. What properties need to be satisfied for $(\mathcal{U}, +, \cdot)$ to be a subspace of $\mathcal{V}$?
 ?
 1. $\mathcal{U} \neq \emptyset$, in particular: $0 \in \mathcal{U}$
 2. **Closure of $\mathcal{U}$:**
@@ -187,7 +187,7 @@ Say that $\mathcal{U} \subseteq \mathcal{V}$ and $\mathcal{V}$ is a vector space
 <!--SR:!2025-12-28,4,311-->
 
 What are the trivial subspaces of every vector space $\mathcal{V}$?::$\mathcal{V}$ itself and $\{0\}$.
-<!--SR:!2025-12-27,4,308-->
+<!--SR:!2026-01-13,17,328-->
 
 Why is the solution set of a homogeneous system of linear equations $Ax = 0$ with $n$ unknowns $x = [x_1,\ldots,x_n]^T$ a subspace of $\mathbb{R}^n$?
 ?
@@ -211,7 +211,7 @@ $$
 A(\lambda x) = \lambda (Ax) = \lambda \cdot 0 = 0,
 $$
 so $\lambda x \in S$.
-<!--SR:!2025-12-27,3,297-->
+<!--SR:!2026-01-06,10,297-->
 
 Why is the solution set of an inhomogeneous system of linear equations $Ax = b, b\neq 0$ not  a subspace of $\mathbb{R}^n$?
 ?
@@ -249,10 +249,10 @@ Consider a vector space $\mathcal{V}$ with $k \in \mathbb{N}$ and $x_1,\ldots,x_
 <!--SR:!2025-12-28,4,311-->
 
 Consider a vector space $\mathcal{V}$ with $k \in \mathbb{N}$ and $x_1,\ldots,x_k \in \mathcal{V}$. When are the vectors $x_1,\ldots,x_k$ linearly independent?::If only the trivial solution exists for $0 = \sum_{i=1}^k \lambda_i x_i$, i.e., $\lambda_1 = \cdots = \lambda_k = 0$.
-<!--SR:!2025-12-27,4,307-->
+<!--SR:!2026-01-08,12,307-->
 
 The vectors $x_1, \ldots, x_k$ are linearly dependent if at least one of them has a certain value. What is the value, and why does it make the vectors linearly dependent?::It is the 0 vector. If there is at least one 0 vector, that means we can create a non-trivial solution to $0 = \sum_{i=1}^k \lambda_i x_i$ by setting the coefficient of the 0 vector to some non-zero number, and setting the rest of the coefficients to 0.
-<!--SR:!2025-12-27,4,308-->
+<!--SR:!2026-01-08,12,308-->
 
 The vectors $x_1, \ldots, x_k$ are linearly dependent if two of them have some kind of relationship to each other. What is the relationship, and why does it make the vectors linearly dependent?::It is if they are equal to each other. If two vectors are equal, that means we can create a non-trivial solution to $0 = \sum_{i=1}^k \lambda_i x_i$ by setting the coefficient of one of them to 1 and the other to -1, then setting the rest of the coefficients to 0.
 <!--SR:!2025-12-28,4,311-->
@@ -269,7 +269,7 @@ Therefore if there are no non-pivot columns, the vectors are linearly independen
 <!--SR:!2025-12-28,4,314-->
 
 Consider a matrix in row echelon form. Why are the pivot columns in the matrix linearly independent of the vectors to its left?::Think of the shape of a matrix in row echelon form, it is in an inverted staircase shape, with the "breadth" of each step on the staircase being potentially more than 1 if there exist non-pivot columns. If we take a pivot column, which is the leftmost column on one such step of the staircase, we see that there is at least one row of the pivot column for which all entries to its left are 0. Therefore, we see that there is no way for the vectors on the left to "cancel out" that non-zero entry of the pivot column, meaning that the pivot column is linearly independent of the columns to its left (but all of them as a set might still be linearly dependent due to how the columns to the left interact among one another).
-<!--SR:!2025-12-27,3,299-->
+<!--SR:!2026-01-05,9,299-->
 
 Consider a matrix in row echelon form. Why can all the non-pivot columns in the matrix be expressed as linear combinations of the pivot columns to its left?::Consider a non-pivot column. Each non-zero entry in that column is part of a pivot row, where the pivot is somewhere to the left of the entry. We can start at the bottommost entry, and assign a coefficient to the pivot column associated with that entry. Then we move up row by row, substituting in the coefficient from previous rows to find the coefficients of the pivot columns one by one to obtain a linear combination that equals the original non-pivot column.
 <!--SR:!2025-12-28,4,311-->
@@ -278,7 +278,7 @@ Say we have a matrix in row echelon form. Just by looking at its pivot columns, 
 <!--SR:!2025-12-28,4,311-->
 
 Say we have a matrix in row echelon form. Just by looking at its pivot columns, how can we tell if the column vectors of the matrix are linearly dependent?::If there is at least one non-pivot column, the column vectors are linearly dependent.
-<!--SR:!2025-12-27,4,308-->
+<!--SR:!2026-01-09,13,308-->
 
 >Skipped a final remark for now, come back to it.
 
@@ -389,22 +389,31 @@ What are two interpretations we can have about the meaning of matrices?::Matrice
 <!--SR:!2025-12-29,4,319-->
 
 Consider a mapping $\Phi : \mathcal{V} \to \mathcal{W}$, where $\mathcal{V}, \mathcal{W}$ can be arbitrary sets. What does it mean for $\Phi$ to be *injective*?::$\forall x,y \in \mathcal{V}:\ \Phi(x)=\Phi(y) \Rightarrow x=y$. It means there cannot be many-to-one relationships. However, an injection might not necessarily cover every element in $\mathcal{W}$.
+<!--SR:!2025-12-30,3,305-->
 
 Consider a mapping $\Phi : \mathcal{V} \to \mathcal{W}$, where $\mathcal{V}, \mathcal{W}$ can be arbitrary sets. What does it mean for $\Phi$ to be *surjective*?::$\Phi(\mathcal{V})=\mathcal{W}$. It means that every element in $\mathcal{W}$ can be "reached" from $\mathcal{V}$ using $\Phi$.
+<!--SR:!2025-12-31,4,325-->
 
 Consider a mapping $\Phi : \mathcal{V} \to \mathcal{W}$, where $\mathcal{V}, \mathcal{W}$ can be arbitrary sets. What does it mean for $\Phi$ to be *bijective*?::It is both injective and surjective. A bijective $\Phi$ can be “undone”, i.e., there exists a mapping $\Psi : W \to V$ so that $\Psi \circ \Phi(x) = x$.
+<!--SR:!2025-12-31,4,325-->
 
 Consider vector spaces $V,W$. What is an _isomorphism_ between $V$ and $W$?::An isomorphism is a linear map $\Phi:V\to W$ that is bijective.
+<!--SR:!2025-12-31,4,326-->
 
 Consider a vector space $V$. What is an _endomorphism_ of $V$?::An endomorphism is a linear map $\Phi:V\to V$.
+<!--SR:!2025-12-28,1,285-->
 
 Consider a vector space $V$. What is an _automorphism_ of $V$?::An automorphism is a linear map $\Phi:V\to V$ that is bijective.
+<!--SR:!2025-12-28,1,285-->
 
 Consider a vector space $V$. What is the _identity mapping_ on $V$?::It is $\mathrm{id}_V:V\to V$ defined by $\mathrm{id}_V(x)=x$ for all $x\in V$.
+<!--SR:!2025-12-30,3,306-->
 
 If we have finite-dimensional vector spaces $V$ and $W$ and they are isomorphic, what can we say about the relationship between their dimensions?::$\dim(V) = \dim(W)$.
+<!--SR:!2025-12-31,4,325-->
 
 If we have finite-dimensional vector spaces $V$ and $W$ and $\dim(V) = \dim(W)$, what can we say about the type of linear mapping between them?::They are isomorphic.
+<!--SR:!2025-12-30,3,306-->
 
 >Not sure if I want to Ankify these, don't see the conceptual importance:
 • For linear mappings $\Phi : V \to W$ and $\Psi : W \to X$, the mapping $\Psi \circ \Phi : V \to X$ is also linear.
@@ -429,9 +438,29 @@ $$
 \in \mathbb{R}^n
 $$
 is the coordinate vector/coordinate representation of $x$ with respect to the ordered basis $B$.
+<!--SR:!2025-12-31,4,326-->
 
 >Skipped this too:
 >Remark. For an $n$-dimensional vector space $V$ and an ordered basis $B$ of $V$, the mapping $\Phi : \mathbb{R}^n \to V$, $\Phi(e_i)=b_i$, $i=1,\ldots,n$, is linear (and because of Theorem 2.17 an isomorphism), where $(e_1,\ldots,e_n)$ is the standard basis of $\mathbb{R}^n$.
+
+Consider vector spaces $V, W$ with corresponding (ordered) bases $B=(b_1,\ldots,b_n)$ and $C=(c_1,\ldots,c_m)$. Moreover, we consider a linear mapping $\Phi: V \to W$. What is the transformation matrix of $\Phi$?
+?
+For $j \in \{1,\ldots,n\}$,
+$$
+\Phi(b_j) = \alpha_{1j}c_1 + \cdots + \alpha_{mj}c_m
+= \sum_{i=1}^{m} \alpha_{ij}c_i
+$$
+is the unique representation of $\Phi(b_j)$ with respect to $C$. Then, we call the $m \times n$-matrix $A_{\Phi}$, whose elements are given by
+$$
+A_{\Phi}(i,j) = \alpha_{ij},
+$$
+the transformation matrix of $\Phi$ (with respect to the ordered bases $B$ of $V$ and $C$ of $W$).
+
+Consider vector spaces $V, W$ with corresponding (ordered) bases $B=(b_1,\ldots,b_n)$ and $C=(c_1,\ldots,c_m)$. If $A_{\Phi}$ is the transformation matrix of $\Phi$, where in $A_{\Phi}$ can you find the coordinates of $\Phi(b_j)$ with respect to the ordered basis $C$ of $W$?::It is the $j$-th column of $A_{\Phi}$.
+
+Consider (finite-dimensional) vector spaces $V, W$ with ordered bases $B, C$ and a linear mapping $\Phi : V \to W$ with transformation matrix $A_\Phi$. If $\hat{x}$ is the coordinate vector of $x \in V$ with respect to $B$, how do we obtain $\hat{y}$, the coordinate vector of $y = \Phi(x) \in W$ with respect to $C$?::$\hat{y} = A_\Phi \hat{x}$. The transformation matrix can be used to map coordinates with respect to an ordered basis in $V$ to coordinates with respect to an ordered basis in $W$.
+
+## 2.7.2 Basis Change
 
 
 

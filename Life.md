@@ -136,23 +136,55 @@ We can even use this approach to create "notes" for codebases that we read, such
 # 2025-12-26
 - [x] "Beasts of a Little Land" reading
 - [x] Math for Machine Learning
-- [ ] Exercise
+- [x] Exercise
 - [x] Obsidian review
 
-- [ ] Continue using the debugger to understand JaxUED
+- [x] Continue using the debugger to understand JaxUED
 - [ ] Continue reading and ankifying "Assessing Adaptive World Models in Machines with Novel Games"
 
-- [ ] Take care of Titin payment
 - [ ] Move Notion todos to here
-- [ ] Message Titin about new arrangement
 - [ ] Expand on the idea on neuro-evolution and RL life simulator you had while waiting in line at OCBC.
 
-- [ ] Take care of Dong Jin stuff
+- [ ] Take care of Titin payment
+- [ ] Message Titin about new arrangement
+- [x] Take care of Dong Jin stuff
 - [ ] Trex test answer key cropping using Gemini 3 Flash
+- [ ] teebloc-trex: for some reason, in ak.py, y2 returned null, which caused the script to error out. Fix it.
+	- [ ] Hmm, why not just train a YOLO model on answer key boxes, and then use Gemini 3.0 flash to label them or stitch them together?
 
 ## PushWorld engineering
 - I'm at a crossroad right now. I have my existing `train_single_task_pushworld_all.py` implementation that I modified from the implementation in `xland-minigrid` to fit PushWorld's case. I have also just finished studying the plr/accel implementation in `jaxued`. Originally I thought I could just copy over some of the stuff in `jaxued` to my original code, but the structure of the code in `jaxued` is different enough that I'm wondering if it's worth it to painstaking update my original implementation. The `jaxued` version has support for a lot more things, like real-time logging and video output, ability to configure evaluation to be done every x updates, etc. It also already has support for accel, meaning if we modify the `jaxued` for the PushWorld case we get to run accel experiments for "free". Should I just use this opportunity to start a whole new PushWorld repository? And move away from `xland-minigrid`?
 - What if I try passing a whole repo to an LLM and ask it to generate atomic Jax puzzles that will help me master all the small Jax concepts used? And then paste it into my Obsidian spaced repetition system.
+
+# 2025-12-27
+- [x] "Beasts of a Little Land" reading
+- [x] Math for Machine Learning
+- [x] Exercise
+- [x] Obsidian review
+
+## life as an experiment
+- I find that on days that I cannot fall asleep easily, I turn to Youtube, which inevitably leads to like a 4am bedtime and a late wakeup the next day. Instead, read a novel or something, which can help you fall asleep more easily.
+- If you need to do something you dread doing...do something more fun instead, and once you are in your flow you can do the harder thing. Like a gateway drug.
+
+# 2025-12-28
+- [ ] "Beasts of a Little Land" reading
+- [ ] Math for Machine Learning
+- [ ] Exercise
+- [ ] Obsidian review
+
+- [ ] Continue porting JaxUED to PushWorld
+- [ ] Continue reading and ankifying "Assessing Adaptive World Models in Machines with Novel Games"
+
+- [ ] Take care of Titin payment
+- [ ] Message Titin about new arrangement
+- [ ] Trex test answer key cropping using Gemini 3 Flash
+- [ ] teebloc-trex: for some reason, in ak.py, y2 returned null, which caused the script to error out. Fix it.
+	- [ ] Hmm, why not just train a YOLO model on answer key boxes, and then use Gemini 3.0 flash to label them or stitch them together?
+
+# 2025-12-29
+- [ ] Move Notion todos to here
+- [ ] Expand on the idea on neuro-evolution and RL life simulator you had while waiting in line at OCBC.
+
 
 # money
 Tweets and ideas for earning money:
@@ -161,3 +193,8 @@ Tweets and ideas for earning money:
 - [ ] Start "RL for dummies"
 - [ ] Start "RL perf for dummies"
 - [ ] Start "The Intelligence Manifesto"
+
+# 2025-12-28
+
+## journal
+

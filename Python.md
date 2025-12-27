@@ -8,7 +8,7 @@ In Python lists, how do you select the last x items?::`some-list[-x:]`.
 <!--SR:!2026-01-02,10,270-->
 
 What is the command for creating a virtual environment called `.venv` in Python?::`python -m venv .venv`.
-<!--SR:!2025-12-27,4,274-->
+<!--SR:!2026-01-12,16,294-->
 
 
 

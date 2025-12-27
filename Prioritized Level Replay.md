@@ -65,7 +65,7 @@ In the formula for score-prioritized distribution over the training levels $P_S(
 <!--SR:!2026-01-04,12,293-->
 
 In the formula for score-prioritized distribution over the training levels $P_S(\Lambda_{\text{train}})$, how can we tune the temperature parameter $\beta$ to get an almost uniform distribution?::In $P_S\!\left(l_i \mid \Lambda_{\text{seen}}, S\right) = \frac{h(S_i)^{1/\beta}}{\sum_j h(S_j)^{1/\beta}}$, as $\beta$ tends to $\infty$, each $h(S)$ tends to 1, resulting in a uniform distribution.
-<!--SR:!2025-12-27,4,296-->
+<!--SR:!2026-01-07,11,296-->
 
 In the formula for the score-prioritized distribution over the training levels $P_S(\Lambda_{\text{train}})$, what function did PLR decide to use for $h$? Why?::It decided to go with $h(S_i) = 1 / \operatorname{rank}(S_i)$. They chose this simply because it performed better compared to other functions such as proportional prioritization ($h(S_i) = S_i$) as well as greedy prioritization (the level with the highest score receives probability $1$).
 <!--SR:!2026-01-09,17,304-->
