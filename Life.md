@@ -168,23 +168,36 @@ We can even use this approach to create "notes" for codebases that we read, such
 
 # 2025-12-28
 - [ ] "Beasts of a Little Land" reading
-- [ ] Math for Machine Learning
-- [ ] Exercise
-- [ ] Obsidian review
+- [x] Math for Machine Learning
+- [x] Exercise
+- [x] Obsidian review
 
 - [ ] Continue porting JaxUED to PushWorld
 - [ ] Continue reading and ankifying "Assessing Adaptive World Models in Machines with Novel Games"
 
-- [ ] Take care of Titin payment
-- [ ] Message Titin about new arrangement
+- [ ] Finish Dong Jin Payment Slip
+- [x] Take care of Titin payment
+- [x] Message Titin about new arrangement
 - [ ] Trex test answer key cropping using Gemini 3 Flash
 - [ ] teebloc-trex: for some reason, in ak.py, y2 returned null, which caused the script to error out. Fix it.
 	- [ ] Hmm, why not just train a YOLO model on answer key boxes, and then use Gemini 3.0 flash to label them or stitch them together?
 
 # 2025-12-29
+- [ ] "Beasts of a Little Land" reading
+- [ ] Math for Machine Learning
+- [ ] Exercise
+- [ ] Obsidian review
+
+- [ ] Finish Dong Jin Payment Slip
+- [ ] Trex test answer key cropping using Gemini 3 Flash
+- [ ] teebloc-trex: for some reason, in ak.py, y2 returned null, which caused the script to error out. Fix it.
+	- [ ] Hmm, why not just train a YOLO model on answer key boxes, and then use Gemini 3.0 flash to label them or stitch them together?
+
+ - [ ] Continue porting JaxUED to PushWorld
+- [ ] Continue reading and ankifying "Assessing Adaptive World Models in Machines with Novel Games"
+
 - [ ] Move Notion todos to here
 - [ ] Expand on the idea on neuro-evolution and RL life simulator you had while waiting in line at OCBC.
-
 
 # money
 Tweets and ideas for earning money:

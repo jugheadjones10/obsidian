@@ -17,7 +17,7 @@ Returns an array with values drawn from `x` where condition is True, and from `y
 # jax.random
 ## jax.random.choice
 What are the commonly used positional arguments of `jax.random.choice`, and in what order?::The usual signature is `jax.random.choice(key, a, shape=(), replace=True, p=None, ...)`.
-<!--SR:!2025-12-28,3,276-->
+<!--SR:!2025-12-30,2,256-->
 
 In  `jax.random.choice(key, a, shape=(), replace=True, p=None, ...)`, what is `shape`?:: An optional tuple of ints, which determines the output shape of the returned samples. If the given shape is, e.g., `(m, n)`, then `m * n` samples are drawn. Default is (), in which case a single value is returned.
 <!--SR:!2025-12-29,4,296-->
@@ -31,7 +31,7 @@ What are the commonly used positional arguments of `jax.lax.scan`, and in what o
 <!--SR:!2026-01-01,9,261-->
 
 In `jax.lax.scan(f, init, xs=None, length=None, ...)`, what is `f`?::It is a Python function to be scanned of type `(c, a) -> (c, b)`, meaning that `f` accepts two arguments where the first is a value of the loop carry and the second is a slice of `xs` along its leading axis, and that `f` returns a pair where the first element represents a new value for the loop carry and the second represents a slice of the output.
-<!--SR:!2025-12-28,4,295-->
+<!--SR:!2026-01-09,12,295-->
 
 In `jax.lax.scan(f, init, xs=None, length=None, ...)`, what is `init`?::It is an initial loop carry value which can be a scalar, array, or any pytree (nested Python tuple/list/dict) thereof. This value must have the same structure as the first element of the pair returned by `f`.
 <!--SR:!2026-01-02,10,270-->

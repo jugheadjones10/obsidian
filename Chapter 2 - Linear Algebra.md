@@ -51,7 +51,7 @@ What are two criteria for a matrix to be in row-echelon form?
 <!--SR:!2026-01-06,17,300-->
 
 For a matrix in row echelon form, is it possible for a pivot to be directly above or below another pivot? Why?::It is *not* possible. By the definition of a matrix in row echelon form, for nonzero rows, the pivot is always strictly to the right of the pivot of the row above it. So we cannot have "stacked" pivot rows where the lengths of the pivot rows are the same.
-<!--SR:!2025-12-28,4,311-->
+<!--SR:!2026-01-14,17,331-->
 
 What are basic variables?::They are the variables corresponding to the pivots of the matrix in row-echelon form.
 <!--SR:!2026-01-03,15,290-->
@@ -184,7 +184,7 @@ Say that $\mathcal{U} \subseteq \mathcal{V}$ and $\mathcal{V}$ is a vector space
 2. **Closure of $\mathcal{U}$:**
 	a. With respect to the outer operation: $\forall \lambda \in \mathbb{R}\ \forall x \in \mathcal{U} : \lambda x \in \mathcal{U}.$
 	b. With respect to the inner operation: $\forall x,y \in \mathcal{U} : x + y \in \mathcal{U}.$
-<!--SR:!2025-12-28,4,311-->
+<!--SR:!2026-01-09,12,311-->
 
 What are the trivial subspaces of every vector space $\mathcal{V}$?::$\mathcal{V}$ itself and $\{0\}$.
 <!--SR:!2026-01-13,17,328-->
@@ -243,10 +243,10 @@ v = \lambda_1 x_1 + \cdots + \lambda_k x_k
   = \sum_{i=1}^k \lambda_i x_i \in \mathcal{V}
 $$
 with $\lambda_1,\ldots,\lambda_k \in \mathbb{R}$ is a *linear combination* of the vectors $x_1,\ldots,x_k$.
-<!--SR:!2025-12-28,4,317-->
+<!--SR:!2026-01-16,19,337-->
 
 Consider a vector space $\mathcal{V}$ with $k \in \mathbb{N}$ and $x_1,\ldots,x_k \in \mathcal{V}$. When are the vectors $x_1,\ldots,x_k$ linearly dependent?::If there is a non-trivial linear combination such that $0 = \sum_{i=1}^k \lambda_i x_i$ with at least one $\lambda_i \neq 0$, the vectors $x_1,\ldots,x_k$ are *linearly dependent*.
-<!--SR:!2025-12-28,4,311-->
+<!--SR:!2026-01-15,18,331-->
 
 Consider a vector space $\mathcal{V}$ with $k \in \mathbb{N}$ and $x_1,\ldots,x_k \in \mathcal{V}$. When are the vectors $x_1,\ldots,x_k$ linearly independent?::If only the trivial solution exists for $0 = \sum_{i=1}^k \lambda_i x_i$, i.e., $\lambda_1 = \cdots = \lambda_k = 0$.
 <!--SR:!2026-01-08,12,307-->
@@ -255,10 +255,10 @@ The vectors $x_1, \ldots, x_k$ are linearly dependent if at least one of them ha
 <!--SR:!2026-01-08,12,308-->
 
 The vectors $x_1, \ldots, x_k$ are linearly dependent if two of them have some kind of relationship to each other. What is the relationship, and why does it make the vectors linearly dependent?::It is if they are equal to each other. If two vectors are equal, that means we can create a non-trivial solution to $0 = \sum_{i=1}^k \lambda_i x_i$ by setting the coefficient of one of them to 1 and the other to -1, then setting the rest of the coefficients to 0.
-<!--SR:!2025-12-28,4,311-->
+<!--SR:!2026-01-10,13,311-->
 
 Given the vectors $\{x_1, \ldots, x_k : x_i \neq 0,\ i = 1, \ldots, k\}$, with $k \ge 2$, what is the required condition for them to be linearly dependent?::They are linearly dependent if and only if at least of them is a linear combination of the others. In particular, if one vector is a multiple of another vector, i.e., $x_i = \lambda x_j, \quad \lambda \in \mathbb{R}$, then the set $\{x_1, \ldots, x_k : x_i \neq 0,\ i = 1, \ldots, k\}$ is linearly dependent.
-<!--SR:!2025-12-28,4,311-->
+<!--SR:!2026-01-10,13,311-->
 
 What is a practical way of checking whether vectors $x_1, \ldots, x_k \in V$ are linearly independent?
 ?
@@ -266,16 +266,16 @@ Use Gaussian elimination until the matrix is in row echelon form (we do not need
 - The pivot columns indicate the vectors which are linearly independent of the vectors on the left.
 - The non-pivot columns can be expressed as linear combinations of the pivot columns on their left.
 Therefore if there are no non-pivot columns, the vectors are linearly independent. Or, if all the columns are pivot columns, the vectors are linearly independent.
-<!--SR:!2025-12-28,4,314-->
+<!--SR:!2026-01-11,14,314-->
 
 Consider a matrix in row echelon form. Why are the pivot columns in the matrix linearly independent of the vectors to its left?::Think of the shape of a matrix in row echelon form, it is in an inverted staircase shape, with the "breadth" of each step on the staircase being potentially more than 1 if there exist non-pivot columns. If we take a pivot column, which is the leftmost column on one such step of the staircase, we see that there is at least one row of the pivot column for which all entries to its left are 0. Therefore, we see that there is no way for the vectors on the left to "cancel out" that non-zero entry of the pivot column, meaning that the pivot column is linearly independent of the columns to its left (but all of them as a set might still be linearly dependent due to how the columns to the left interact among one another).
 <!--SR:!2026-01-05,9,299-->
 
 Consider a matrix in row echelon form. Why can all the non-pivot columns in the matrix be expressed as linear combinations of the pivot columns to its left?::Consider a non-pivot column. Each non-zero entry in that column is part of a pivot row, where the pivot is somewhere to the left of the entry. We can start at the bottommost entry, and assign a coefficient to the pivot column associated with that entry. Then we move up row by row, substituting in the coefficient from previous rows to find the coefficients of the pivot columns one by one to obtain a linear combination that equals the original non-pivot column.
-<!--SR:!2025-12-28,4,311-->
+<!--SR:!2026-01-08,11,311-->
 
 Say we have a matrix in row echelon form. Just by looking at its pivot columns, how can we tell if the column vectors of the matrix are linearly independent?::The column vectors are linearly independent if and only if all the columns are pivot columns.
-<!--SR:!2025-12-28,4,311-->
+<!--SR:!2026-01-14,17,331-->
 
 Say we have a matrix in row echelon form. Just by looking at its pivot columns, how can we tell if the column vectors of the matrix are linearly dependent?::If there is at least one non-pivot column, the column vectors are linearly dependent.
 <!--SR:!2026-01-09,13,308-->
@@ -286,7 +286,7 @@ Say we have a matrix in row echelon form. Just by looking at its pivot columns, 
 
 ## 2.6.1 Generating Set and Basis
 Consider a vector space $V=(\mathcal{V},+,\cdot)$. What is a *generating set* of $V$?::A set of vectors $\mathcal{A}=\{x_1,\ldots,x_k\}\subseteq \mathcal{V}$ is a *generating set* of $V$ if every vector $v\in\mathcal{V}$ can be expressed as a linear combination of $x_1,\ldots,x_k$.
-<!--SR:!2025-12-28,3,299-->
+<!--SR:!2025-12-30,2,279-->
 
 Consider a vector space $V=(\mathcal{V},+,\cdot)$ and a set of vectors $\mathcal{A}=\{x_1,\ldots,x_k\}\subseteq \mathcal{V}$. If $\mathcal{A}$ is a generating set of $\mathcal{V}$, what is the set of all linear combinations of vectors in $\mathcal{A}$ called?::It is called the *span* of $\mathcal{A}$. If $\mathcal{A}$ spans the vector space $\mathcal{V}$, we write $\mathcal{V} = \operatorname{span}[\mathcal{A}]$ or $\mathcal{V} = \operatorname{span}[x_1,\ldots,x_k].$
 <!--SR:!2025-12-29,4,319-->
@@ -333,7 +333,7 @@ What is the number of linearly independent rows of a matrix $A \in \mathbb{R}^{m
 <!--SR:!2025-12-29,4,319-->
 
 Is the column rank equal to the row rank?::Yes.
-<!--SR:!2025-12-28,3,299-->
+<!--SR:!2026-01-10,13,319-->
 
 What is the dimension of the subspace $U \subseteq \mathbb{R}^m$ spanned by the columns of $A \in \mathbb{R}^{m\times n}$? And what is it called?::$\dim(U)=\mathrm{rk}(A)$, and this subspace is called the *image* or *range*.
 <!--SR:!2025-12-30,4,299-->
@@ -348,7 +348,7 @@ How do you find the basis of the subspace $W \subseteq \mathbb{R}^n$ spanned by 
 <!--SR:!2025-12-29,4,319-->
 
 For all $A \in \mathbb{R}^{n\times n}$, how do we tell if it is regular (invertible) using rank?::$A$ is regular (invertible) if and only if $\mathrm{rk}(A)=n$.
-<!--SR:!2025-12-28,3,299-->
+<!--SR:!2026-01-06,9,299-->
 
 For all $A \in \mathbb{R}^{m\times n}$ and all $b \in \mathbb{R}^m$ it holds that the linear equation system $Ax=b$ can be solved if and only if...(answer in terms of rank):: $\mathrm{rk}(A)=\mathrm{rk}(A \mid b),$ where $A \mid b$ denotes the augmented system.
 <!--SR:!2025-12-29,4,319-->
@@ -357,7 +357,7 @@ What dimension does the subspace of solutions for $Ax=0$ possess, where $A \in \
 <!--SR:!2025-12-29,4,319-->
 
 What is the subspace of solutions for $Ax=0$ called?::The *kernel* or the *null space*.
-<!--SR:!2025-12-28,3,299-->
+<!--SR:!2026-01-07,10,299-->
 
 When does a matrix $A \in \mathbb{R}^{m\times n}$ have *full rank*?::If its rank equals the largest possible rank for a matrix of the same dimensions. In other words, the matrix has full rank if $\mathrm{rk}(A)=\min(m,n)$.
 <!--SR:!2025-12-29,4,319-->
@@ -380,7 +380,7 @@ $$
 \Phi(\lambda x) = \lambda \Phi(x)
 $$
 for all $x, y \in V$ and $\lambda \in \mathbb{R}$.
-<!--SR:!2025-12-28,3,299-->
+<!--SR:!2026-01-07,10,299-->
 
 For vector spaces $V, W$, what is required for a mapping $\Phi : V \to W$ to be a *linear mapping* (or *vector space homomorphism* / *linear transformation*)?:: $\forall x,y \in V \ \forall \lambda,\psi \in \mathbb{R}:\quad \Phi(\lambda x + \psi y) = \lambda \Phi(x) + \psi \Phi(y)$.
 <!--SR:!2025-12-29,4,324-->
@@ -401,10 +401,10 @@ Consider vector spaces $V,W$. What is an _isomorphism_ between $V$ and $W$?::An 
 <!--SR:!2025-12-31,4,326-->
 
 Consider a vector space $V$. What is an _endomorphism_ of $V$?::An endomorphism is a linear map $\Phi:V\to V$.
-<!--SR:!2025-12-28,1,285-->
+<!--SR:!2025-12-29,1,265-->
 
 Consider a vector space $V$. What is an _automorphism_ of $V$?::An automorphism is a linear map $\Phi:V\to V$ that is bijective.
-<!--SR:!2025-12-28,1,285-->
+<!--SR:!2025-12-29,1,265-->
 
 Consider a vector space $V$. What is the _identity mapping_ on $V$?::It is $\mathrm{id}_V:V\to V$ defined by $\mathrm{id}_V(x)=x$ for all $x\in V$.
 <!--SR:!2025-12-30,3,306-->
@@ -455,12 +455,44 @@ $$
 A_{\Phi}(i,j) = \alpha_{ij},
 $$
 the transformation matrix of $\Phi$ (with respect to the ordered bases $B$ of $V$ and $C$ of $W$).
+<!--SR:!2025-12-31,3,306-->
 
 Consider vector spaces $V, W$ with corresponding (ordered) bases $B=(b_1,\ldots,b_n)$ and $C=(c_1,\ldots,c_m)$. If $A_{\Phi}$ is the transformation matrix of $\Phi$, where in $A_{\Phi}$ can you find the coordinates of $\Phi(b_j)$ with respect to the ordered basis $C$ of $W$?::It is the $j$-th column of $A_{\Phi}$.
+<!--SR:!2026-01-01,4,326-->
 
 Consider (finite-dimensional) vector spaces $V, W$ with ordered bases $B, C$ and a linear mapping $\Phi : V \to W$ with transformation matrix $A_\Phi$. If $\hat{x}$ is the coordinate vector of $x \in V$ with respect to $B$, how do we obtain $\hat{y}$, the coordinate vector of $y = \Phi(x) \in W$ with respect to $C$?::$\hat{y} = A_\Phi \hat{x}$. The transformation matrix can be used to map coordinates with respect to an ordered basis in $V$ to coordinates with respect to an ordered basis in $W$.
+<!--SR:!2026-01-01,4,326-->
 
 ## 2.7.2 Basis Change
+
+
+
+For a linear mapping $\Phi : V \to W$, ordered bases
+$$
+B = (b_1,\ldots,b_n), \qquad \tilde{B} = (\tilde{b}_1,\ldots,\tilde{b}_n)
+$$
+of $V$ and
+$$
+C = (c_1,\ldots,c_m), \qquad \tilde{C} = (\tilde{c}_1,\ldots,\tilde{c}_m)
+$$
+of $W$, and a transformation matrix $A_\Phi$ of $\Phi$ with respect to $B$ and $C$, what is the corresponding transformation matrix $\tilde{A}_\Phi$ with respect to the bases $\tilde{B}$ and $\tilde{C}$?
+?
+$$
+\tilde{A}_\Phi = T^{-1} A_\Phi S.
+$$
+Here, $S \in \mathbb{R}^{n \times n}$ is the transformation matrix of $\mathrm{id}_V$ that maps coordinates with respect to $\tilde{B}$ onto coordinates with respect to $B$, and $T \in \mathbb{R}^{m \times m}$ is the transformation matrix of $\mathrm{id}_W$ that maps coordinates with respect to $\tilde{C}$ onto coordinates with respect to $C$.
+
+For the proof showing that $\tilde{A}_\Phi = T^{-1} A_\Phi S$, how do I write the vectors of the new basis $\tilde{B}$ of $V$ as a linear combination of the basis vectors of $B$ (use the correct letters for the unknowns)?::$\tilde{b}_j = s_{1j} b_1 + \cdots + s_{nj} b_n = \sum_{i=1}^{n} s_{ij} b_i,\qquad j = 1,\ldots,n$.
+
+For the proof showing that $\tilde{A}_\Phi = T^{-1} A_\Phi S$, how do I write the new basis vectors $\tilde{C}$ of $W$ as a linear combination of the basis vectors of $C$ (use the correct letters for the unknowns)?::$\tilde{c}_k = t_{1k} c_1 + \cdots + t_{mk} c_m = \sum_{l=1}^{m} t_{lk} c_l,\qquad k = 1,\ldots,m$.
+
+For the proof showing that $\tilde{A}_\Phi = T^{-1} A_\Phi S$, what is $S$?::$S = ((s_{ij})) \in \mathbb{R}^{n\times n}$ is the transformation matrix that maps coordinates with respect to $\tilde{B}$ onto coordinates with respect to $B$.
+
+For the proof showing that $\tilde{A}_\Phi = T^{-1} A_\Phi S$, what is $T$?::$T = ((t_{lk})) \in \mathbb{R}^{m\times m}$ is the transformation matrix that maps coordinates with respect to $\tilde{C}$ onto coordinates with respect to $C$.
+
+
+
+
 
 
 
