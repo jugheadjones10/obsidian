@@ -192,12 +192,24 @@ We can even use this approach to create "notes" for codebases that we read, such
 - [ ] Trex test answer key cropping using Gemini 3 Flash
 - [ ] teebloc-trex: for some reason, in ak.py, y2 returned null, which caused the script to error out. Fix it.
 	- [ ] Hmm, why not just train a YOLO model on answer key boxes, and then use Gemini 3.0 flash to label them or stitch them together?
+- [ ] Run on P6
 
  - [ ] Continue porting JaxUED to PushWorld
 - [ ] Continue reading and ankifying "Assessing Adaptive World Models in Machines with Novel Games"
 
 - [ ] Move Notion todos to here
 - [ ] Expand on the idea on neuro-evolution and RL life simulator you had while waiting in line at OCBC.
+
+## Teebloc
+### Answer key cropping
+We know that there are many different types of answer keys. Here are the categories encountered so far:
+- Grid view, with one column.
+	- For this, what if we train a YOLO model to identify all rows, and then we use a light Gemini model to label the question number of rows as well as decide whether each row is a continuation of an existing question or now.
+- Grid view, with two columns.
+	- Similar approach to one column, except we might need to train a different YOLO model?
+- Similar to questions, except with the answers filled in.
+
+
 
 # money
 Tweets and ideas for earning money:
