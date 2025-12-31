@@ -10,7 +10,7 @@ What mathematical object is a "particular solution" or "special solution" to a s
 <!--SR:!2026-01-06,17,303-->
 
 Assume that we have found a particular solution to a system of linear equations. How can we generate more solutions using the particular solution?::We can check if we can non-trivially generate the 0 vector using linear combinations of the columns of the matrix such that $Az=0$, where $z$ is the vector giving the 0 vector. Then adding $z$ to the particular solution can give us more solutions.
-<!--SR:!2025-12-30,7,272-->
+<!--SR:!2026-01-27,27,292-->
 
 How do we generate a 0 vector from the columns of a matrix?::Look for one column that can be expressed as a linear combination of some of the other columns. Then the 0 vector is this linear combination minus the original column that the linear combination is equal to.
 <!--SR:!2026-01-04,16,299-->
@@ -72,8 +72,8 @@ What are the three criteria for a matrix to be in a reduced row-echelon form?
 What does Gaussian elimination do?::It is an algorithm that performs elementary operations to bring a system of linear equations into reduced row-echelon form.
 <!--SR:!2026-01-10,17,305-->
 
-Why does a matrix being in reduced row-echelon form make it easy to find the general solutions of a system of linear equations?::If a matrix $A$ is in reduced row-echelon form, it is easy to find the solutions to $Ax=0$ and therefore the general solutions of the system of linear equations. Starting from the leftmost column and moving right, for each non-pivot column we encounter, there will be enough pivot columns to its left for the non-pivot column to be expressed as their sums and multiples. Then we can obtain a solution by assigning the basic variables to the left of our non-pivot column the same values that are in the non-pivot column. We assign -1 to the free variable corresponding to our non-pivot column, and 0 to all other remaining variables, in this way obtaining a solution to $Ax=0$.
-<!--SR:!2025-12-30,5,265-->
+Why does a matrix being in reduced row-echelon form make it easy to find the general solutions of a system of linear equations?::Starting from the leftmost column and moving right, for each non-pivot column we encounter, there will be enough pivot columns to its left for the non-pivot column to be expressed as their sums and multiples. Then we can obtain a solution by assigning the basic variables to the left of our non-pivot column the same values that are in the non-pivot column. We assign -1 to the free variable corresponding to our non-pivot column, and 0 to all other remaining variables, in this way obtaining a solution to $Ax=0$.
+<!--SR:!2026-01-13,13,265-->
 
 What two properties of matrices in reduced row-echelon form make it trivial to express a non-pivot column as a linear combination of the pivot columns to its left?::For each non-zero number in a non-pivot column, there exists a pivot column to its left where the 1 is on the same row as the non-zero number. This is guaranteed because for each row of a matrix in reduced row-echelon form (that is not a 0-row), the pivot, which is the leftmost non-zero number, is 1. Secondly, it is also trivial because in all the pivot columns, the pivot is the only nonzero element in its column; therefore, when expressing a non-pivot column j as a linear combination of pivot columns, we can simply take as coefficients the entries of column j in the pivot rows.
 <!--SR:!2026-01-05,13,295-->
@@ -160,7 +160,7 @@ $$
 \cdot : \mathbb{R} \times \mathcal{V} \to \mathcal{V}
 $$
 where the following are satisfied: $(\mathcal{V}, +)$ is an Abelian group, Distributivity, Associativity with respect to the outer operation, and Neutral element with respect to the outer operation.
-<!--SR:!2025-12-30,3,258-->
+<!--SR:!2026-01-09,9,258-->
 
 What exactly is the "Distributivity" property satisfied by a real-valued *vector space* $\mathcal{V} = (\mathcal{V}, +, \cdot)$?
 ?
@@ -176,7 +176,7 @@ What exactly is the "Neutral element" property (with respect to the outer operat
 
 ## 2.4.3 Vector Subspaces
 What is the definition of a vector subspace?::Let $\mathcal{V} = (\mathcal{V}, +, \cdot)$ be a vector space and $\mathcal{U} \subseteq \mathcal{V}$, $\mathcal{U} \neq \emptyset$. Then $\mathcal{U} = (\mathcal{U}, +, \cdot)$ is called a *vector subspace* of $\mathcal{V}$ (or *linear subspace*) if $\mathcal{U}$ is a vector space with the vector space operations $+$ and $\cdot$ restricted to $\mathcal{U} \times \mathcal{U}$ and $\mathbb{R} \times \mathcal{U}$. We write $\mathcal{U} \subseteq \mathcal{V}$ to denote a subspace $\mathcal{U}$ of $\mathcal{V}$.
-<!--SR:!2025-12-29,2,247-->
+<!--SR:!2026-01-05,5,247-->
 
 Say that $\mathcal{U} \subseteq \mathcal{V}$ and $\mathcal{V}$ is a vector space. What properties need to be satisfied for $(\mathcal{U}, +, \cdot)$ to be a subspace of $\mathcal{V}$?
 ?
@@ -286,7 +286,7 @@ Say we have a matrix in row echelon form. Just by looking at its pivot columns, 
 
 ## 2.6.1 Generating Set and Basis
 Consider a vector space $V=(\mathcal{V},+,\cdot)$. What is a *generating set* of $V$?::A set of vectors $\mathcal{A}=\{x_1,\ldots,x_k\}\subseteq \mathcal{V}$ is a *generating set* of $V$ if every vector $v\in\mathcal{V}$ can be expressed as a linear combination of $x_1,\ldots,x_k$.
-<!--SR:!2025-12-30,2,279-->
+<!--SR:!2026-01-08,8,299-->
 
 Consider a vector space $V=(\mathcal{V},+,\cdot)$ and a set of vectors $\mathcal{A}=\{x_1,\ldots,x_k\}\subseteq \mathcal{V}$. If $\mathcal{A}$ is a generating set of $\mathcal{V}$, what is the set of all linear combinations of vectors in $\mathcal{A}$ called?::It is called the *span* of $\mathcal{A}$. If $\mathcal{A}$ spans the vector space $\mathcal{V}$, we write $\mathcal{V} = \operatorname{span}[\mathcal{A}]$ or $\mathcal{V} = \operatorname{span}[x_1,\ldots,x_k].$
 <!--SR:!2025-12-29,4,319-->
@@ -298,7 +298,7 @@ Let $V = (\mathcal{V}, +, \cdot)$ be a vector space and $\mathcal{B} \subseteq \
 <!--SR:!2025-12-30,4,299-->
 
 Let $V = (\mathcal{V}, +, \cdot)$ be a vector space and $\mathcal{B} \subseteq \mathcal{V}$, $\mathcal{B} \neq \varnothing$. If $\mathcal{B}$ is a basis of $V$, in what sense is $\mathcal{B}$ *maximal*?::$\mathcal{B}$ is a maximal linearly independent set of vectors in $V$, i.e., adding any other vector to this set will make it linearly dependent.
-<!--SR:!2025-12-29,4,319-->
+<!--SR:!2026-01-12,12,319-->
 
 Let $V = (\mathcal{V}, +, \cdot)$ be a vector space and $\mathcal{B} \subseteq \mathcal{V}$, $\mathcal{B} \neq \varnothing$. If $\mathcal{B}$ is a basis of $V$, we know that every vector $x \in \mathcal{V}$ is a linear combination of vectors from $\mathcal{B}$. Is every such linear combination unique?
 ?
@@ -307,7 +307,7 @@ $$
 x = \sum_{i=1}^k \lambda_i b_i \;=\; \sum_{i=1}^k \psi_i b_i
 $$
 and $\lambda_i, \psi_i \in \mathbb{R}$, $b_i \in \mathcal{B}$, it follows that $\lambda_i = \psi_i$, $i = 1, \ldots, k$.
-<!--SR:!2025-12-29,4,319-->
+<!--SR:!2026-01-19,19,339-->
 
 Consider a vector space $V$. What does the *dimension* of $V$ mean?::It is the number of basis vectors of $V$, and is represented by $\dim(V)$.
 <!--SR:!2025-12-29,4,319-->
@@ -335,8 +335,8 @@ What is the number of linearly independent rows of a matrix $A \in \mathbb{R}^{m
 Is the column rank equal to the row rank?::Yes.
 <!--SR:!2026-01-10,13,319-->
 
-What is the dimension of the subspace $U \subseteq \mathbb{R}^m$ spanned by the columns of $A \in \mathbb{R}^{m\times n}$? And what is it called?::$\dim(U)=\mathrm{rk}(A)$, and this subspace is called the *image* or *range*.
-<!--SR:!2025-12-30,4,299-->
+What is the dimension of the subspace $U \subseteq \mathbb{R}^m$ spanned by the columns of $A \in \mathbb{R}^{m\times n}$? And what is this subspace called?::$\dim(U)=\mathrm{rk}(A)$, and this subspace is called the *image* or *range*.
+<!--SR:!2026-01-02,2,279-->
 
 How do you find the basis of the subspace $U \subseteq \mathbb{R}^m$ spanned by the columns of $A \in \mathbb{R}^{m\times n}$?::Perform Gaussian elimination on $A$ to find the pivot columns, which will then be the basis vectors of the subspace $U$.
 <!--SR:!2025-12-29,4,319-->
@@ -354,13 +354,13 @@ For all $A \in \mathbb{R}^{m\times n}$ and all $b \in \mathbb{R}^m$ it holds tha
 <!--SR:!2025-12-29,4,319-->
 
 What dimension does the subspace of solutions for $Ax=0$ possess, where $A \in \mathbb{R}^{m\times n}$?::It possesses dimension $n-\mathrm{rk}(A)$.
-<!--SR:!2025-12-29,4,319-->
+<!--SR:!2026-01-02,2,299-->
 
 What is the subspace of solutions for $Ax=0$ called?::The *kernel* or the *null space*.
 <!--SR:!2026-01-07,10,299-->
 
 When does a matrix $A \in \mathbb{R}^{m\times n}$ have *full rank*?::If its rank equals the largest possible rank for a matrix of the same dimensions. In other words, the matrix has full rank if $\mathrm{rk}(A)=\min(m,n)$.
-<!--SR:!2025-12-29,4,319-->
+<!--SR:!2026-01-18,18,339-->
 
 When is a matrix to be *rank deficient*?::If it does not have full rank.
 <!--SR:!2025-12-29,4,319-->
@@ -386,34 +386,34 @@ For vector spaces $V, W$, what is required for a mapping $\Phi : V \to W$ to be 
 <!--SR:!2025-12-29,4,324-->
 
 What are two interpretations we can have about the meaning of matrices?::Matrices can represent a collection of vectors, or a linear mapping.
-<!--SR:!2025-12-29,4,319-->
+<!--SR:!2026-01-17,17,339-->
 
 Consider a mapping $\Phi : \mathcal{V} \to \mathcal{W}$, where $\mathcal{V}, \mathcal{W}$ can be arbitrary sets. What does it mean for $\Phi$ to be *injective*?::$\forall x,y \in \mathcal{V}:\ \Phi(x)=\Phi(y) \Rightarrow x=y$. It means there cannot be many-to-one relationships. However, an injection might not necessarily cover every element in $\mathcal{W}$.
 <!--SR:!2025-12-30,3,305-->
 
 Consider a mapping $\Phi : \mathcal{V} \to \mathcal{W}$, where $\mathcal{V}, \mathcal{W}$ can be arbitrary sets. What does it mean for $\Phi$ to be *surjective*?::$\Phi(\mathcal{V})=\mathcal{W}$. It means that every element in $\mathcal{W}$ can be "reached" from $\mathcal{V}$ using $\Phi$.
-<!--SR:!2025-12-31,4,325-->
+<!--SR:!2026-01-19,19,345-->
 
 Consider a mapping $\Phi : \mathcal{V} \to \mathcal{W}$, where $\mathcal{V}, \mathcal{W}$ can be arbitrary sets. What does it mean for $\Phi$ to be *bijective*?::It is both injective and surjective. A bijective $\Phi$ can be “undone”, i.e., there exists a mapping $\Psi : W \to V$ so that $\Psi \circ \Phi(x) = x$.
-<!--SR:!2025-12-31,4,325-->
+<!--SR:!2026-01-17,17,345-->
 
 Consider vector spaces $V,W$. What is an _isomorphism_ between $V$ and $W$?::An isomorphism is a linear map $\Phi:V\to W$ that is bijective.
 <!--SR:!2025-12-31,4,326-->
 
 Consider a vector space $V$. What is an _endomorphism_ of $V$?::An endomorphism is a linear map $\Phi:V\to V$.
-<!--SR:!2025-12-29,1,265-->
+<!--SR:!2026-01-03,3,265-->
 
 Consider a vector space $V$. What is an _automorphism_ of $V$?::An automorphism is a linear map $\Phi:V\to V$ that is bijective.
-<!--SR:!2025-12-29,1,265-->
+<!--SR:!2026-01-03,3,265-->
 
 Consider a vector space $V$. What is the _identity mapping_ on $V$?::It is $\mathrm{id}_V:V\to V$ defined by $\mathrm{id}_V(x)=x$ for all $x\in V$.
 <!--SR:!2025-12-30,3,306-->
 
 If we have finite-dimensional vector spaces $V$ and $W$ and they are isomorphic, what can we say about the relationship between their dimensions?::$\dim(V) = \dim(W)$.
-<!--SR:!2025-12-31,4,325-->
+<!--SR:!2026-01-02,2,305-->
 
 If we have finite-dimensional vector spaces $V$ and $W$ and $\dim(V) = \dim(W)$, what can we say about the type of linear mapping between them?::They are isomorphic.
-<!--SR:!2025-12-30,3,306-->
+<!--SR:!2026-01-02,2,286-->
 
 >Not sure if I want to Ankify these, don't see the conceptual importance:
 • For linear mappings $\Phi : V \to W$ and $\Psi : W \to X$, the mapping $\Psi \circ \Phi : V \to X$ is also linear.
@@ -438,7 +438,7 @@ $$
 \in \mathbb{R}^n
 $$
 is the coordinate vector/coordinate representation of $x$ with respect to the ordered basis $B$.
-<!--SR:!2025-12-31,4,326-->
+<!--SR:!2026-01-18,18,346-->
 
 >Skipped this too:
 >Remark. For an $n$-dimensional vector space $V$ and an ordered basis $B$ of $V$, the mapping $\Phi : \mathbb{R}^n \to V$, $\Phi(e_i)=b_i$, $i=1,\ldots,n$, is linear (and because of Theorem 2.17 an isomorphism), where $(e_1,\ldots,e_n)$ is the standard basis of $\mathbb{R}^n$.
@@ -464,8 +464,20 @@ Consider (finite-dimensional) vector spaces $V, W$ with ordered bases $B, C$ and
 <!--SR:!2026-01-01,4,326-->
 
 ## 2.7.2 Basis Change
-
-
+For a linear mapping $\Phi : V \to W$, ordered bases
+$$
+B = (b_1,\ldots,b_n), \qquad \tilde{B} = (\tilde{b}_1,\ldots,\tilde{b}_n)
+$$
+of $V$ and
+$$
+C = (c_1,\ldots,c_m), \qquad \tilde{C} = (\tilde{c}_1,\ldots,\tilde{c}_m)
+$$
+of $W$, and a transformation matrix $A_\Phi$ of $\Phi$ with respect to $B$ and $C$, what is the equation for the corresponding transformation matrix $\tilde{A}_\Phi$ with respect to the bases $\tilde{B}$ and $\tilde{C}$?
+?
+$$
+\tilde{A}_\Phi = T^{-1} A_\Phi S.
+$$
+Here, $S \in \mathbb{R}^{n \times n}$ is the transformation matrix of $\mathrm{id}_V$ that maps coordinates with respect to $\tilde{B}$ onto coordinates with respect to $B$, and $T \in \mathbb{R}^{m \times m}$ is the transformation matrix of $\mathrm{id}_W$ that maps coordinates with respect to $\tilde{C}$ onto coordinates with respect to $C$.
 
 For a linear mapping $\Phi : V \to W$, ordered bases
 $$
@@ -475,24 +487,48 @@ of $V$ and
 $$
 C = (c_1,\ldots,c_m), \qquad \tilde{C} = (\tilde{c}_1,\ldots,\tilde{c}_m)
 $$
-of $W$, and a transformation matrix $A_\Phi$ of $\Phi$ with respect to $B$ and $C$, what is the corresponding transformation matrix $\tilde{A}_\Phi$ with respect to the bases $\tilde{B}$ and $\tilde{C}$?
+of $W$, and a transformation matrix $A_\Phi$ of $\Phi$ with respect to $B$ and $C$, we have that the  corresponding transformation matrix $\tilde{A}_\Phi$ with respect to the bases $\tilde{B}$ and $\tilde{C}$ is $\tilde{A}_\Phi = T^{-1} A_\Phi S$. What is $S$? What does the $j$-th column of $S$ represent?
 ?
+$S = ((s_{ij})) \in \mathbb{R}^{n\times n}$ is the transformation matrix that maps coordinates with respect to $\tilde{B}$ onto coordinates with respect to $B$. The $j$-th column of $S$ is the coordinate representation of $\tilde{b}_j$
+with respect to $B$.
+
+For a linear mapping $\Phi : V \to W$, ordered bases
 $$
-\tilde{A}_\Phi = T^{-1} A_\Phi S.
+B = (b_1,\ldots,b_n), \qquad \tilde{B} = (\tilde{b}_1,\ldots,\tilde{b}_n)
 $$
-Here, $S \in \mathbb{R}^{n \times n}$ is the transformation matrix of $\mathrm{id}_V$ that maps coordinates with respect to $\tilde{B}$ onto coordinates with respect to $B$, and $T \in \mathbb{R}^{m \times m}$ is the transformation matrix of $\mathrm{id}_W$ that maps coordinates with respect to $\tilde{C}$ onto coordinates with respect to $C$.
+of $V$ and
+$$
+C = (c_1,\ldots,c_m), \qquad \tilde{C} = (\tilde{c}_1,\ldots,\tilde{c}_m)
+$$
+of $W$, and a transformation matrix $A_\Phi$ of $\Phi$ with respect to $B$ and $C$, we have that the  corresponding transformation matrix $\tilde{A}_\Phi$ with respect to the bases $\tilde{B}$ and $\tilde{C}$ is $\tilde{A}_\Phi = T^{-1} A_\Phi S$. What is $T$? What does the $k$-th column of $T$ represent?
+?
+$T = ((t_{lk})) \in \mathbb{R}^{m\times m}$ is the transformation matrix that maps coordinates with respect to $\tilde{C}$ onto coordinates with respect to $C$. The $k$-th column of $T$ is the coordinate representation of $\tilde{c}_k$
+with respect to $C$.
 
-For the proof showing that $\tilde{A}_\Phi = T^{-1} A_\Phi S$, how do I write the vectors of the new basis $\tilde{B}$ of $V$ as a linear combination of the basis vectors of $B$ (use the correct letters for the unknowns)?::$\tilde{b}_j = s_{1j} b_1 + \cdots + s_{nj} b_n = \sum_{i=1}^{n} s_{ij} b_i,\qquad j = 1,\ldots,n$.
+>Skipped the proof of Theorem 2.20 (Basis Change) because the intuitive explanation is much clearer and more straightforward.
 
-For the proof showing that $\tilde{A}_\Phi = T^{-1} A_\Phi S$, how do I write the new basis vectors $\tilde{C}$ of $W$ as a linear combination of the basis vectors of $C$ (use the correct letters for the unknowns)?::$\tilde{c}_k = t_{1k} c_1 + \cdots + t_{mk} c_m = \sum_{l=1}^{m} t_{lk} c_l,\qquad k = 1,\ldots,m$.
+For a linear mapping $\Phi : V \to W$, ordered bases
+$$
+B = (b_1,\ldots,b_n), \qquad \tilde{B} = (\tilde{b}_1,\ldots,\tilde{b}_n)
+$$
+of $V$ and
+$$
+C = (c_1,\ldots,c_m), \qquad \tilde{C} = (\tilde{c}_1,\ldots,\tilde{c}_m)
+$$
+of $W$, and a transformation matrix $A_\Phi$ of $\Phi$ with respect to $B$ and $C$, we have that the  corresponding transformation matrix $\tilde{A}_\Phi$ with respect to the bases $\tilde{B}$ and $\tilde{C}$ is $\tilde{A}_\Phi = T^{-1} A_\Phi S$. What is the equivalent form of this equation using compositions of linear mappings? Imagine the cycle diagram.
+?
+![[Pasted image 20251231153804.png]]
+We can determine the transformation matrix $\tilde{A}_{\Phi}$ as follows: First, we find the matrix representation of the linear mapping $\Psi_{B\tilde{B}} : V \to V$ that maps coordinates with respect to the new basis $\tilde{B}$ onto the (unique) coordinates with respect to the “old” basis $B$ (in $V$). Then, we use the transformation matrix $A_{\Phi}$ of $\Phi_{CB} : V \to W$ to map these coordinates onto the coordinates with respect to $C$ in $W$. Finally, we use a linear mapping $\Xi_{\tilde{C}C} : W \to W$ to map the coordinates with respect to $C$ onto coordinates with respect to $\tilde{C}$. Therefore, we can express the linear mapping $\Phi_{\tilde{C}\tilde{B}}$ as a composition of linear mappings that involve the “old” basis:
+$$
+\Phi_{\tilde{C}\tilde{B}} \;=\; \Xi_{\tilde{C}C} \circ \Phi_{CB} \circ \Psi_{B\tilde{B}}
+\;=\; \Xi_{C\tilde{C}}^{-1} \circ \Phi_{CB} \circ \Psi_{\tilde{B}B}.
+$$
+Concretely, we use $\Psi_{\tilde{B}B} = \mathrm{id}_V$ and $\Xi_{\tilde{C}C} = \mathrm{id}_W$, i.e., the identity mappings that map vectors onto themselves, but with respect to a different basis. Replacing each linear mapping with its corresponding transformation matrix gives us the original equation $\tilde{A}_\Phi = T^{-1} A_\Phi S$.
 
-For the proof showing that $\tilde{A}_\Phi = T^{-1} A_\Phi S$, what is $S$?::$S = ((s_{ij})) \in \mathbb{R}^{n\times n}$ is the transformation matrix that maps coordinates with respect to $\tilde{B}$ onto coordinates with respect to $B$.
+When are two matrices $A, \tilde{A} \in \mathbb{R}^{m \times n}$ _equivalent_?::If there exist regular matrices $S \in \mathbb{R}^{n \times n}$ and $T \in \mathbb{R}^{m \times m}$, such that $\tilde{A} = T^{-1}AS$.
 
-For the proof showing that $\tilde{A}_\Phi = T^{-1} A_\Phi S$, what is $T$?::$T = ((t_{lk})) \in \mathbb{R}^{m\times m}$ is the transformation matrix that maps coordinates with respect to $\tilde{C}$ onto coordinates with respect to $C$.
-
-
-
-
+When are two matrices $A, \tilde{A} \in \mathbb{R}^{n \times n}$ _similar_?::If there exists a regular matrix $S \in \mathbb{R}^{n \times n}$ with  
+$\tilde{A} = S^{-1}AS$.
 
 
 

@@ -205,9 +205,54 @@ We can even use this approach to create "notes" for codebases that we read, such
 We know that there are many different types of answer keys. Here are the categories encountered so far:
 - Grid view, with one column.
 	- For this, what if we train a YOLO model to identify all rows, and then we use a light Gemini model to label the question number of rows as well as decide whether each row is a continuation of an existing question or now.
+	- Is training a custom YOLO model the only way though? Surely there are good table detector models out there? We just need one that can extract table rows reliably.
+		- Paddle has a table cell detector, but upon testing on one of our answer keys we got this output:
+		- ![[Pasted image 20251230144242.png|300]]
+		- The tricky thing about answer key tables is that they may contain nested tables, which seems to confuse the more "classic" table recognisers.
 - Grid view, with two columns.
 	- Similar approach to one column, except we might need to train a different YOLO model?
 - Similar to questions, except with the answers filled in.
+
+# 2025-12-30
+- [ ] "Beasts of a Little Land" reading
+- [ ] Math for Machine Learning
+- [x] Exercise
+- [ ] Obsidian review
+
+- [ ] Finish Dong Jin Payment Slip
+- [ ] Trex test answer key cropping using Gemini 3 Flash
+- [ ] teebloc-trex: for some reason, in ak.py, y2 returned null, which caused the script to error out. Fix it.
+	- [ ] Hmm, why not just train a YOLO model on answer key boxes, and then use Gemini 3.0 flash to label them or stitch them together?
+- [x] Continue training answer key YOLO model
+- [ ] Run on P6
+- [ ] Check Solomon output
+
+ - [ ] Continue porting JaxUED to PushWorld
+- [ ] Continue reading and ankifying "Assessing Adaptive World Models in Machines with Novel Games"
+
+- [ ] Move Notion todos to here
+- [ ] Expand on the idea on neuro-evolution and RL life simulator you had while waiting in line at OCBC.
+
+# 2025-12-31
+- [x] "Beasts of a Little Land" reading
+- [x] Math for Machine Learning
+- [ ] Exercise
+- [ ] Obsidian review
+
+- [ ] Finish Dong Jin Payment Slip
+- [ ] Trex test answer key cropping using Gemini 3 Flash
+- [ ] teebloc-trex: for some reason, in ak.py, y2 returned null, which caused the script to error out. Fix it.
+	- [ ] Hmm, why not just train a YOLO model on answer key boxes, and then use Gemini 3.0 flash to label them or stitch them together?
+	- [ ] Add some IoU logic to prevent boxes from being completely inside another box.
+- [ ] Continue training answer key YOLO model
+- [ ] Run on P6
+- [ ] Check Solomon output
+
+ - [ ] Continue porting JaxUED to PushWorld
+- [ ] Continue reading and ankifying "Assessing Adaptive World Models in Machines with Novel Games"
+
+- [ ] Move Notion todos to here
+- [ ] Expand on the idea on neuro-evolution and RL life simulator you had while waiting in line at OCBC.
 
 
 
@@ -219,7 +264,4 @@ Tweets and ideas for earning money:
 - [ ] Start "RL perf for dummies"
 - [ ] Start "The Intelligence Manifesto"
 
-# 2025-12-28
-
-## journal
 

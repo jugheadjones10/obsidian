@@ -6,7 +6,7 @@
       {
         "id": "b8c7aa7048181cb3",
         "type": "tabs",
-        "dimension": 63.51522842639594,
+        "dimension": 69.73350253807106,
         "children": [
           {
             "id": "56df314d823e0973",
@@ -34,20 +34,6 @@
               },
               "icon": "lucide-file",
               "title": "Chapter 2 - Linear Algebra"
-            }
-          },
-          {
-            "id": "792ed07b6839e75d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Prioritized Level Replay.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Prioritized Level Replay"
             }
           },
           {
@@ -97,7 +83,7 @@
       {
         "id": "ff00ddaccc93be7f",
         "type": "tabs",
-        "dimension": 36.484771573604064,
+        "dimension": 30.26649746192893,
         "children": [
           {
             "id": "74e9827263b35d00",
@@ -290,9 +276,15 @@
   },
   "active": "56df314d823e0973",
   "lastOpenFiles": [
-    "Aggregates/Teebloc.md",
     "Chapter 2 - Linear Algebra.md",
     "Life.md",
+    "images/Pasted image 20251231153804.png",
+    "Jax.md",
+    "Assessing Adaptive World Models in Machineswith Novel Games.md",
+    "Untitled.base",
+    "Untitled 1.base",
+    "images/Pasted image 20251230144242.png",
+    "Aggregates/Teebloc.md",
     "Aggregates/Life-As-An-Experiment.md",
     "Weekly Life.md",
     "Aggregates/Project-Neumann.md",
@@ -300,8 +292,6 @@
     "Aggregates/Project-Neuman.md",
     "Aggregates/Project-Neumanㅣ.md",
     "Prioritized Level Replay.md",
-    "Assessing Adaptive World Models in Machineswith Novel Games.md",
-    "Jax.md",
     "Python.md",
     "Aggregates/Pushworld-Engineering.md",
     "Aggregates/Pushworld-Ideas.md",
@@ -321,7 +311,6 @@
     "Mathematics for ML.md",
     "Aggregates/Women.md",
     "Aggregates/Men.md",
-    "Aggregates/Places.md",
     "Aggregates",
     "Untitled.canvas"
   ]
