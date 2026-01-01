@@ -78,12 +78,13 @@
               "title": "Python"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "ff00ddaccc93be7f",
         "type": "tabs",
-        "dimension": 30.26649746192893,
+        "dimension": 30.266497461928928,
         "children": [
           {
             "id": "74e9827263b35d00",
@@ -274,10 +275,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "56df314d823e0973",
+  "active": "2eeef9bfc2d9ed4f",
   "lastOpenFiles": [
-    "Chapter 2 - Linear Algebra.md",
     "Life.md",
+    "Chapter 2 - Linear Algebra.md",
     "images/Pasted image 20251231153804.png",
     "Jax.md",
     "Assessing Adaptive World Models in Machineswith Novel Games.md",
