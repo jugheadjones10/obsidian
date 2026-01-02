@@ -4,7 +4,7 @@ type: paper
 #flashcards/papers/prioritized-level-replay
 
 What is the title of Jiang, 2021?::"Prioritized Level Replay"
-<!--SR:!2026-01-02,14,290-->
+<!--SR:!2026-02-27,56,310-->
 
 Which citation has the title "Prioritized Level Replay"?::Jiang, 2021
 <!--SR:!2026-01-05,17,299-->
@@ -39,24 +39,24 @@ How is the new-level distribution $P_{\text{new}}$​ implemented if the trainin
 <!--SR:!2026-01-04,15,290-->
 
 In the finite training-level setting, what is a suitable way to schedule how the replay probability $P_D(d = 1)$ changes over time?::We can naturally anneal it as $|\Lambda_{\text{seen}}| / |\Lambda_{\text{train}}|$.
-<!--SR:!2026-01-02,14,296-->
+<!--SR:!2026-02-12,41,296-->
 
 Why does it make sense to anneal the replay probability $P_D(d = 1)$ as $|\Lambda_{\text{seen}}| / |\Lambda_{\text{train}}|$?::As training proceeds, the proportion of seen levels increases, causing the fraction $|\Lambda_{\text{seen}}| / |\Lambda_{\text{train}}|$ to increase. The replay probability will therefore increase as training proceeds, which makes sense because the higher the fraction of training levels we have seen, the more we want to replay them.
 <!--SR:!2026-01-05,16,296-->
 
-Add the diagram thing!
+>Add the diagram thing!
 
 ## 3.1 Scoring Levels for Learning Potential
 What is the formula for the TD-error at timestep $t$, $\delta_t$?::$\delta_t = r_t + \gamma V(s_{t+1}) - V(s_t)$.
-<!--SR:!2026-01-02,14,290-->
+<!--SR:!2026-02-26,55,310-->
 
 Why is $\delta_t$ a useful measure of the learning potential of a particular state transition?::Because $\delta_t$ indicates a mismatch between $V(s_t)$ and the one-step TD target $r_t + \gamma V(s_{t+1})$, signaling a high learning potential.
 <!--SR:!2026-01-15,20,256-->
 
 How do we use $\delta_t$, which is for single state transitions, to calculate a proxy for the learning potential of a whole episode trajectory?::We calculate the average magnitude of the GAE over each of the T time steps in the latest episode trajectory $\tau$ from that level: $\frac{1}{T}\sum_{t=0}^{T}\left|\sum_{k=t}^{T}(\gamma\lambda)^{k-t}\,\delta_k\right|$.
-<!--SR:!2025-12-31,7,250-->
+<!--SR:!2026-01-19,17,250-->
 
-In PLR, what is the formula for the level score $S_i$ of level $i$ that gives a measure of the learning potential of replaying that level in the future?:$S_i = \mathrm{score}(\tau,\pi) = \frac{1}{T}\sum_{t=0}^{T}\left|\sum_{k=t}^{T}(\gamma\lambda)^{k-t}\delta_k\right|.$
+In PLR, what is the formula for the level score $S_i$ of level $i$ that gives a measure of the learning potential of replaying that level in the future?::$S_i = \mathrm{score}(\tau,\pi) = \frac{1}{T}\sum_{t=0}^{T}\left|\sum_{k=t}^{T}(\gamma\lambda)^{k-t}\delta_k\right|.$
 
 In PLR, what is the formula for calculating the score-prioritized distribution $P_S(\Lambda_{\text{train}})$ over the training levels?::$P_S\!\left(l_i \mid \Lambda_{\text{seen}}, S\right) = \frac{h(S_i)^{1/\beta}}{\sum_j h(S_j)^{1/\beta}}$, where the function $h$ defines how differences in level scores translate to differences in level prioritization, and the the temperature parameter $\beta$ tunes how much $h(S)$ ultimately determines the resulting distribution.
 <!--SR:!2026-01-09,16,307-->
@@ -80,9 +80,5 @@ In PLR, what is the formula for calculating the staleness-prioritized distributi
 In PLR, what formula is used to update the replay distribution $P_{\text{replay}}$ (where we expand the $P_S$ and $P_C$ into their more detailed conditional probability forms)?::$P_{\text{replay}}(l_i) = (1 - \rho)P_S(l_i \mid \Lambda_{\text{seen}}, S) + \rho P_C(l_i \mid \Lambda_{\text{seen}}, C, c).$
 <!--SR:!2026-01-03,11,287-->
 
-
-
-
-
-**Skipped some paragraphs in Section 3.1 because I haven't studied GAE properly yet.** Come back afterwards.
+>**Skipped some paragraphs in Section 3.1 because I haven't studied GAE properly yet.** Come back afterwards.
 

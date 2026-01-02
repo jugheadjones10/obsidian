@@ -78,8 +78,7 @@
               "title": "Python"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "ff00ddaccc93be7f",
@@ -275,13 +274,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2eeef9bfc2d9ed4f",
+  "active": "56df314d823e0973",
   "lastOpenFiles": [
-    "Life.md",
     "Chapter 2 - Linear Algebra.md",
+    "images/Pasted image 20260102110054.png",
+    "Assessing Adaptive World Models in Machineswith Novel Games.md",
+    "Prioritized Level Replay.md",
+    "Life.md",
     "images/Pasted image 20251231153804.png",
     "Jax.md",
-    "Assessing Adaptive World Models in Machineswith Novel Games.md",
     "Untitled.base",
     "Untitled 1.base",
     "images/Pasted image 20251230144242.png",
@@ -292,7 +293,6 @@
     "Aggregates/Project-Neuma.md",
     "Aggregates/Project-Neuman.md",
     "Aggregates/Project-Neumanㅣ.md",
-    "Prioritized Level Replay.md",
     "Python.md",
     "Aggregates/Pushworld-Engineering.md",
     "Aggregates/Pushworld-Ideas.md",

@@ -236,8 +236,8 @@ We know that there are many different types of answer keys. Here are the categor
 # 2025-12-31
 - [x] "Beasts of a Little Land" reading
 - [x] Math for Machine Learning
-- [ ] Exercise
-- [ ] Obsidian review
+- [x] Exercise
+- [x] Obsidian review
 
 - [ ] Finish Dong Jin Payment Slip
 - [ ] Trex test answer key cropping using Gemini 3 Flash
@@ -254,6 +254,30 @@ We know that there are many different types of answer keys. Here are the categor
 - [ ] Move Notion todos to here
 - [ ] Expand on the idea on neuro-evolution and RL life simulator you had while waiting in line at OCBC.
 
+# 2026-1-1
+- [x] Exercise
+
+# 2026-1-2
+- [x] "Beasts of a Little Land" reading
+- [x] Math for Machine Learning
+- [ ] Exercise
+- [x] Obsidian review
+
+- [ ] Finish Dong Jin Payment Slip
+- [ ] Continue training answer key YOLO model
+- [ ] Run existing pipeline on P6
+	- [ ] Improve the initial whitespace model?
+		- Ran the existing model on the first 20 P6 paper to test the existing whitespace. Updated UI to show whitespace output.
+		- Wait shit, I realised it's not that the whitespace model is mislabelling cover as mcq, it's just an error in displaying.
+- [ ] Check Solomon output
+
+ - [ ] Continue porting JaxUED to PushWorld
+- [ ] Continue reading and ankifying "Assessing Adaptive World Models in Machines with Novel Games"
+
+- [ ] Move Notion todos to here
+- [ ] Expand on the idea on neuro-evolution and RL life simulator you had while waiting in line at OCBC.
+
+
 
 
 # money
@@ -264,4 +288,7 @@ Tweets and ideas for earning money:
 - [ ] Start "RL perf for dummies"
 - [ ] Start "The Intelligence Manifesto"
 
+# 2026-01-02
+
+## journal
 

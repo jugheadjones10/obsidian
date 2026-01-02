@@ -20,7 +20,7 @@ What are the commonly used positional arguments of `jax.random.choice`, and in w
 <!--SR:!2026-01-07,7,276-->
 
 In  `jax.random.choice(key, a, shape=(), replace=True, p=None, ...)`, what is `shape`?:: An optional tuple of ints, which determines the output shape of the returned samples. If the given shape is, e.g., `(m, n)`, then `m * n` samples are drawn. Default is (), in which case a single value is returned.
-<!--SR:!2025-12-29,4,296-->
+<!--SR:!2026-01-17,15,316-->
 
 You need to randomly sample one or more items from a set of candidates (optionally with a probability distribution, and optionally with the results in some arbitrary shape). What JAX function do you use and in what order are the arguments?::`jax.random.choice(key, a, shape=() replace=True, p=None, ...)`.
 <!--SR:!2026-01-12,12,276-->
@@ -34,7 +34,7 @@ In `jax.lax.scan(f, init, xs=None, length=None, ...)`, what is `f`?::It is a Pyt
 <!--SR:!2026-01-09,12,295-->
 
 In `jax.lax.scan(f, init, xs=None, length=None, ...)`, what is `init`?::It is an initial loop carry value which can be a scalar, array, or any pytree (nested Python tuple/list/dict) thereof. This value must have the same structure as the first element of the pair returned by `f`.
-<!--SR:!2026-01-02,10,270-->
+<!--SR:!2026-02-08,37,290-->
 
 In `jax.lax.scan(f, init, xs=None, length=None, ...)`, what is `xs`?::It is the value of type `[a]` over which to scan along the leading axis, where `[a]` can be an array or any pytree (nested Python tuple/list/dict) thereof with consistent leading axis sizes.
 <!--SR:!2026-01-07,15,290-->
