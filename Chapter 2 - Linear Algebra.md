@@ -556,6 +556,46 @@ For vector spaces $V, W$ and a linear mapping $\Phi : V \to W$, if we have that 
 
 If $A_{\Phi}$ is the transformation matrix of $\Phi$ with respect to an ordered basis and $\dim(\mathrm{Im}(\Phi)) < \dim(V)$, what can we say about the number of solutions to the system of linear equations $A_{\Phi}\mathbf{x} = \mathbf{0}$?::It has infinitely many solutions.
 
-
 # 2.8 Affine Subspaces
-31st Dec
+Let $V$ be a vector space, $\mathbf{x}_0 \in V$ and $U \subseteq V$ a subspace. What is the affine subspace or linear manifold of $V$?
+?
+The subset $L$ defined as:
+$$
+L = \mathbf{x}_0 + U := \{\mathbf{x}_0 + \mathbf{u} : \mathbf{u} \in U\}
+$$
+$$
+= \{\mathbf{v} \in V \mid \exists \mathbf{u} \in U : \mathbf{v} = \mathbf{x}_0 + \mathbf{u}\} \subseteq V
+$$
+
+Let $V$ be a vector space, $\mathbf{x}_0 \in V$ and $U \subseteq V$ a subspace. For the affine subspace defined as $L = \mathbf{x}_0 + U := \{\mathbf{x}_0 + \mathbf{u} : \mathbf{u} \in U\}$, what is $U$ called?::The direction or direction space.
+
+Let $V$ be a vector space, $\mathbf{x}_0 \in V$ and $U \subseteq V$ a subspace. For the affine subspace defined as $L = \mathbf{x}_0 + U := \{\mathbf{x}_0 + \mathbf{u} : \mathbf{u} \in U\}$, what is $\mathbf{x}_0$ called?::The support point.
+
+Let $V$ be a vector space, $\mathbf{x}_0 \in V$ and $U \subseteq V$ a subspace. For the affine subspace defined as $L = \mathbf{x}_0 + U := \{\mathbf{x}_0 + \mathbf{u} : \mathbf{u} \in U\}$, why does $L$ exclude $\mathbf{0}$ if $\mathbf{x}_0 \notin U$?::Suppose $\mathbf{x}_0 \notin U$ and $L$ includes $\mathbf{0}$. If $L$ includes $\mathbf{0}$, that means there exists $\mathbf{u} \in U$ for which $\mathbf{0} = \mathbf{x}_0 + \mathbf{u}$. But then $\mathbf{x}_0 = \mathbf{0} - \mathbf{u}$. But by the definition of a subspace, it is closed under the outer operation (scalar multiplication), therefore $- \mathbf{u} \in U$, and $\mathbf{x}_0 \in U$, which is a contradiction.
+
+Consider a $k$-dimensional affine space $L = \mathbf{x}_0 + U$, and let $(\mathbf{b}_1, \ldots, \mathbf{b}_k)$ be an ordered basis of $U$. What is the parametric equation of $L$?::Every element $\mathbf{x} \in L$ can be uniquely described as: $\mathbf{x} = \mathbf{x}_0 + \lambda_1 \mathbf{b}_1 + \ldots + \lambda_k \mathbf{b}_k$ where $\lambda_1, \ldots, \lambda_k \in \mathbb{R}$. This representation is called the parametric equation of $L$ with directional vectors $\mathbf{b}_1, \ldots, \mathbf{b}_k$ and parameters $\lambda_1, \ldots, \lambda_k$.
+
+What are hyperplanes, and what is the corresponding parametric equation of a hyperplane?:: In $\mathbb{R}^n$, the $(n-1)$-dimensional affine subspaces are called *hyperplanes*, and the corresponding parametric equation is $\mathbf{y} = \mathbf{x}_0 + \sum_{i=1}^{n-1} \lambda_i \mathbf{b}_i$, where $\mathbf{b}_1, \ldots, \mathbf{b}_{n-1}$ form a basis of an $(n-1)$-dimensional subspace $U$ of $\mathbb{R}^n$.
+
+In $\mathbb{R}^2$, what are hyperplanes?::Lines.
+
+In $\mathbb{R}^3$, what are hyperplanes?::Planes.
+
+
+
+### Remark (Affine Subspaces)
+Consider two affine subspaces $L = \mathbf{x}_0 + U$ and $\tilde{L} = \tilde{\mathbf{x}}_0 + \tilde{U}$ of a vector space $V$. Then, $L \subseteq \tilde{L}$ if and only if $U \subseteq \tilde{U}$ and $\mathbf{x}_0 - \tilde{\mathbf{x}}_0 \in \tilde{U}$.
+
+Affine subspaces are often described by parameters. Consider a $k$-dimensional affine space $L = \mathbf{x}_0 + U$. If $(\mathbf{b}_1, \ldots, \mathbf{b}_k)$ is an ordered basis of $U$, then every element $\mathbf{x} \in L$ can be uniquely described as:
+$$
+\mathbf{x} = \mathbf{x}_0 + \lambda_1 \mathbf{b}_1 + \ldots + \lambda_k \mathbf{b}_k \quad (2.131) \text{}
+$$
+where $\lambda_1, \ldots, \lambda_k \in \mathbb{R}$. This representation is called the **parametric equation** of $L$ with **directional vectors** $\mathbf{b}_1, \ldots, \mathbf{b}_k$ and **parameters** $\lambda_1, \ldots, \lambda_k$.
+
+
+Suppose A and not B
+Suppose 
+
+suppose A is true, and B is false
+If that is a contradiction,
+then the opposite is true

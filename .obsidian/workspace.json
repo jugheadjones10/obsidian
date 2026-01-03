@@ -6,7 +6,7 @@
       {
         "id": "b8c7aa7048181cb3",
         "type": "tabs",
-        "dimension": 69.73350253807106,
+        "dimension": 62.30964467005076,
         "children": [
           {
             "id": "56df314d823e0973",
@@ -83,7 +83,7 @@
       {
         "id": "ff00ddaccc93be7f",
         "type": "tabs",
-        "dimension": 30.266497461928928,
+        "dimension": 37.690355329949234,
         "children": [
           {
             "id": "74e9827263b35d00",
@@ -274,13 +274,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "56df314d823e0973",
+  "active": "74e9827263b35d00",
   "lastOpenFiles": [
+    "Life.md",
     "Chapter 2 - Linear Algebra.md",
+    "Weekly Life.md",
     "images/Pasted image 20260102110054.png",
     "Assessing Adaptive World Models in Machineswith Novel Games.md",
     "Prioritized Level Replay.md",
-    "Life.md",
     "images/Pasted image 20251231153804.png",
     "Jax.md",
     "Untitled.base",
@@ -288,7 +289,6 @@
     "images/Pasted image 20251230144242.png",
     "Aggregates/Teebloc.md",
     "Aggregates/Life-As-An-Experiment.md",
-    "Weekly Life.md",
     "Aggregates/Project-Neumann.md",
     "Aggregates/Project-Neuma.md",
     "Aggregates/Project-Neuman.md",
